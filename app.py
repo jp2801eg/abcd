@@ -60,11 +60,26 @@ uploaded_file = st.file_uploader(
     type=["txt", "md"],
 )
 
-if uploaded_file is not None:
-    st.success(f"File loaded: **{uploaded_file.name}**")
+st.divider()
 
+pasted_text = st.text_area(
+    "Or paste your notes here",
+    placeholder="Paste your meeting notes directly…",
+    height=200,
+)
+
+# Determine input: file takes priority over pasted text
+if uploaded_file is not None:
+    input_text = uploaded_file.read().decode("utf-8")
+    st.success(f"File loaded: **{uploaded_file.name}**")
+elif pasted_text.strip():
+    input_text = pasted_text.strip()
+else:
+    input_text = None
+
+if input_text is not None:
     if st.button("Generate Map", type="primary"):
-        text = uploaded_file.read().decode("utf-8")
+        text = input_text
         chunks = split_into_chunks(text)
 
         progress_bar = st.progress(0, text="Starting…")
