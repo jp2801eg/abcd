@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Denison Park",
+    "category": "Built/Natural Environment",
+    "description": "A neighborhood park that serves as a key social gathering space with basketball courts and daily community activity, particularly for youth.",
+    "contact": null,
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["recreation", "youth engagement", "social gathering space", "basketball courts"],
+    "source_text": "Denison Park — received the most green dots. Jerome: \"That park kept me out of trouble. It keeps kids out of trouble now.\" Basketball courts cited as daily social hub in summer."
+  },
+  {
+    "name": "Brookside Park / Metropark",
+    "category": "Built/Natural Environment",
+    "description": "A nearby park with natural beauty that has potential but faces equity barriers in terms of neighborhood residents feeling welcomed.",
+    "contact": null,
+    "location": "near Clark-Fulton neighborhood",
+    "gifts": ["natural green space", "recreation potential"],
+    "source_text": "Brookside Park / Metropark (nearby) — mentioned as \"close but feels disconnected.\" Kenji: \"It's beautiful but people from this neighborhood don't feel like it's for them.\""
+  },
+  {
+    "name": "Community garden on W. 41st",
+    "category": "Built/Natural Environment",
+    "description": "A managed community garden with 18 plots behind Orchard school that provides growing space for neighborhood residents.",
+    "contact": "Yolanda",
+    "location": "W. 41st, behind Orchard school",
+    "gifts": ["food production", "gathering space", "land access", "gardening opportunity"],
+    "source_text": "Community garden on W. 41st (behind Orchard school) — Yolanda manages it; 18 plots; waitlist of 12 households. Named as one of the most requested assets to expand."
+  },
+  {
+    "name": "Fulton Road corridor",
+    "category": "Built/Natural Environment",
+    "description": "A commercial corridor with diverse businesses and storefronts that serves as the neighborhood's economic and cultural spine.",
+    "contact": null,
+    "location": "Fulton Road, Clark-Fulton neighborhood",
+    "gifts": ["commerce", "gathering spaces", "cultural diversity", "food access"],
+    "source_text": "Fulton Road corridor — mixed response. Long-time residents miss Czech/Slovak storefronts; newer residents value the taquerias, carnicerías, and quinceañera shops."
+  },
+  {
+    "name": "El Rincon Restaurant",
+    "category": "Built/Natural Environment",
+    "description": "A restaurant that functions as an informal community gathering place and social hub.",
+    "contact": null,
+    "location": "Clark-Fulton neighborhood, Fulton Road area",
+    "gifts": ["gathering space", "community connection"],
+    "source_text": "El Rincon Restaurant — named multiple times as a gathering place and informal community hub"
+  },
+  {
+    "name": "The old Czech Cultural Garden building",
+    "category": "Built/Natural Environment",
+    "description": "A vacant historic building with cultural significance that represents potential for neighborhood revitalization and cultural preservation.",
+    "contact": null,
+    "location": "W. 38th Street",
+    "gifts": ["historic structure", "cultural heritage space", "revitalization potential"],
+    "source_text": "The old Czech Cultural Garden building on W. 38th — vacant for 3 years; yellow dot. Multiple people said \"someone should do something with that.\""
+  },
+  {
+    "name": "RTA Route 22",
+    "category": "Built/Natural Environment",
+    "description": "Public transportation infrastructure that connects residents to opportunities and services across the region.",
+    "contact": null,
+    "location": "Clark Ave.",
+    "gifts": ["transportation access", "connectivity"],
+    "source_text": "RTA Route 22 (Clark Ave.) — named as critical; concern about recent schedule cuts"
+  },
+  {
+    "name": "Informally maintained green space on W. 47th",
+    "category": "Built/Natural Environment",
+    "description": "A vacant lot that neighbors have cared for and maintained for over 5 years, demonstrating community stewardship and collective capacity.",
+    "contact": "Bridget",
+    "location": "W. 47th Street",
+    "gifts": ["community beautification", "neighborhood stewardship", "gathering space"],
+    "source_text": "one on W. 47th that neighbors have informally maintained for 5+ years; Bridget: \"We mow it, we planted flowers, we treat it like ours. But it's not ours.\""
+  },
+  {
+    "name": "Sal's Auto Glass",
+    "category": "Economic Assets",
+    "description": "A locally-owned business that employs 4 neighborhood residents and demonstrates commitment to long-term community presence.",
+    "contact": "Sal",
+    "location": "Clark Ave.",
+    "gifts": ["local employment", "economic stability", "business ownership"],
+    "source_text": "Sal's Auto Glass (Clark Ave.) — Sal noted he employs 4 local residents, all from the neighborhood. Has resisted offers to sell the building: \"I've been here 22 years. This is my place.\""
+  },
+  {
+    "name": "Small restaurants on Fulton",
+    "category": "Economic Assets",
+    "description": "Local restaurants, including carnicerías and taquerias, that employ neighborhood residents including youth.",
+    "contact": "Rosa",
+    "location": "Fulton Road",
+    "gifts": ["local employment", "youth job opportunities", "commerce"],
+    "source_text": "Several small restaurants along Fulton — Rosa said the carnicería owner (unnamed, not present) employs teenagers for after-school delivery work"
+  },
+  {
+    "name": "Home-based catering business",
+    "category": "Economic Assets",
+    "description": "A home-based catering business operated by a neighborhood resident providing income and food services.",
+    "contact": "Yolanda",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["food production", "self-employment", "catering services"],
+    "source_text": "Home-based businesses mentioned: catering (Yolanda), hair braiding (Tamara), tax preparation (unnamed resident, \"very trusted,\" word of mouth only)"
+  },
+  {
+    "name": "Hair braiding business",
+    "category": "Economic Assets",
+    "description": "A home-based hair braiding business operated by a neighborhood resident providing income and personal services.",
+    "contact": "Tamara",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["personal services", "self-employment", "cultural service"],
+    "source_text": "Home-based businesses mentioned: catering (Yolanda), hair braiding (Tamara), tax preparation (unnamed resident, \"very trusted,\" word of mouth only)"
+  },
+  {
+    "name": "Tax preparation home business",
+    "category": "Economic Assets",
+    "description": "A home-based tax preparation service operated by a trusted neighborhood resident providing financial services.",
+    "contact": null,
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["financial services", "self-employment", "expertise"],
+    "source_text": "Home-based businesses mentioned: catering (Yolanda), hair braiding (Tamara), tax preparation (unnamed resident, \"very trusted,\" word of mouth only)"
+  },
+  {
+    "name": "Small engine repair home business",
+    "category": "Economic Assets",
+    "description": "A neighborhood-based small engine repair service demonstrating skilled trade and word-of-mouth business success.",
+    "contact": null,
+    "location": "two blocks from meeting area",
+    "gifts": ["skilled repair services", "self-employment", "technical expertise"],
+    "source_text": "Jerome mentioned a guy two blocks over who does small engine repair out of his garage and \"never advertises but always busy\""
+  },
+  {
+    "name": "Neighborhood workforce in anchor institutions",
+    "category": "Economic Assets",
+    "description": "Multiple residents employed at MetroHealth, schools, and local businesses who represent economic stability and community knowledge.",
+    "contact": "Kenji",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["employment", "institutional connections", "economic participation"],
+    "source_text": "Multiple participants noted that neighborhood residents work at MetroHealth, the schools, and local businesses — but often don't know each other in that capacity."
+  },
+  {
+    "name": "Fulton Road corridor Czech/Slovak heritage",
+    "category": "Cultural Assets",
+    "description": "The historical Czech and Slovak cultural presence and storefronts that shaped the neighborhood's identity and heritage.",
+    "contact": "Mrs. Prochazka",
+    "location": "Fulton Road",
+    "gifts": ["cultural heritage", "community history", "identity"],
+    "source_text": "Long-time residents miss Czech/Slovak storefronts; newer residents value the taquerias, carnicerías, and quinceañera shops. Mrs. Prochazka: \"I miss what it was.\""
+  },
+  {
+    "name": "Fulton Road contemporary Latino culture",
+    "category": "Cultural Assets",
+    "description": "Contemporary Latin American cultural presence on Fulton Road, including taquerias, carnicerías, and quinceañera shops reflecting current community heritage.",
+    "contact": "Rosa",
+    "location": "Fulton Road",
+    "gifts": ["cultural identity", "food traditions", "celebration spaces"],
+    "source_text": "newer residents value the taquerias, carnicerías, and quinceañera shops. Rosa, gently: \"But it feeds my family now.\""
+  },
+  {
+    "name": "Jerome",
+    "category": "Individuals",
+    "description": "A community member with lived experience of how parks provide youth opportunity, safety, and social connection.",
+    "contact": "Jerome",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["youth mentorship perspective", "community history", "social connection"],
+    "source_text": "Jerome: \"That park kept me out of trouble. It keeps kids out of trouble now.\""
+  },
+  {
+    "name": "Kenji",
+    "category": "Individuals",
+    "description": "A community member with awareness of community disconnection and capacity to identify integration opportunities.",
+    "contact": "Kenji",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["community analysis", "systems thinking", "problem identification"],
+    "source_text": "Kenji: \"It's beautiful but people from this neighborhood don't feel like it's for them.\" and \"We're all part of the same economy but we don't connect the dots.\""
+  },
+  {
+    "name": "Yolanda",
+    "category": "Individuals",
+    "description": "A community member who manages the community garden and operates a home-based catering business, demonstrating food production skills and community stewardship.",
+    "contact": "Yolanda",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["garden management", "food production", "catering", "community organizing"],
+    "source_text": "Yolanda manages it; 18 plots" and "Home-based businesses mentioned: catering (Yolanda)"
+  },
+  {
+    "name": "Rosa",
+    "category": "Individuals",
+    "description": "A community member who bridges generational and cultural perspectives, advocates for contemporary economic contributions, and operates within local commerce.",
+    "contact": "Rosa",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["cultural bridge-building", "economic participation", "community dialogue"],
+    "source_text": "Rosa, gently: \"But it feeds my family now.\""
+  },
+  {
+    "name": "Mrs. Prochazka",
+    "category": "Individuals",
+    "description": "A long-time neighborhood resident who carries institutional memory of the neighborhood's Czech/Slovak heritage and cultural history.",
+    "contact": "Mrs. Prochazka",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["community history", "cultural memory", "long-term perspective"],
+    "source_text": "Mrs. Prochazka: \"I miss what it was.\""
+  },
+  {
+    "name": "Sal",
+    "category": "Individuals",
+    "description": "A business owner with 22 years of neighborhood presence, commitment to local employment, and demonstrated resilience.",
+    "contact": "Sal",
+    "location": "Clark Ave.",
+    "gifts": ["business leadership", "employment creation", "community stability"],
+    "source_text": "Sal noted he employs 4 local residents, all from the neighborhood. Has resisted offers to sell the building: \"I've been here 22 years. This is my place.\""
+  },
+  {
+    "name": "Bridget",
+    "category": "Individuals",
+    "description": "A community member who demonstrates long-term environmental stewardship and collective care for shared space.",
+    "contact": "Bridget",
+    "location": "W. 47th Street area",
+    "gifts": ["environmental stewardship", "community organizing", "beautification"],
+    "source_text": "Bridget: \"We mow it, we planted flowers, we treat it like ours. But it's not ours.\""
+  },
+  {
+    "name": "Mrs. Cunningham",
+    "category": "Individuals",
+    "description": "A neighborhood resident with awareness of changing property ownership patterns and their impact on community wellbeing.",
+    "contact": "Mrs. Cunningham",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["community observation", "housing awareness"],
+    "source_text": "Mrs. Cunningham noted that 3 homes on her block are now rental-owned by an out-of-town LLC. \"I don't know who to call when something breaks.\""
+  },
+  {
+    "name": "Darla",
+    "category": "Individuals",
+    "description": "A community member who identifies opportunity for economic cooperation and mutual aid through skills exchange.",
+    "contact": "Darla",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["economic innovation", "community organizing", "mutual aid thinking"],
+    "source_text": "Darla raised the idea of a neighborhood skills exchange or time bank — well-received"
+  },
+  {
+    "name": "Tamara",
+    "category": "Individuals",
+    "description": "A community member who operates a home-based hair braiding business serving neighborhood residents.",
+    "contact": "Tamara",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["personal services", "hair braiding expertise", "self-employment"],
+    "source_text": "Home-based businesses mentioned: catering (Yolanda), hair braiding (Tamara), tax preparation (unnamed resident, \"very trusted,\" word of mouth only)"
+  },
+  {
+    "name": "Marcus",
+    "category": "Individuals",
+    "description": "A community member or organizer assigned to research existing time bank and mutual aid infrastructure in Cleveland.",
+    "contact": "Marcus",
+    "location": null,
+    "gifts": ["research capacity", "follow-up coordination"],
+    "source_text": "[ACTION: Research existing time bank / mutual aid infrastructure in Cleveland — Marcus to follow up]"
+  },
+  {
+    "name": "Denise",
+    "category": "Individuals",
+    "description": "A meeting facilitator who demonstrates skilled community engagement, reflection, and ability to hold space for complex conversations.",
+    "contact": "Denise",
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["facilitation", "community organizing", "asset mapping"],
+    "source_text": "Denise unrolled a large printed street map of Clark-Fulton and placed it on the center table... Denise let that sit."
+  },
+  {
+    "name": "Carnicería owner on Fulton",
+    "category": "Individuals",
+    "description": "A business owner who employs neighborhood youth in after-school delivery work, demonstrating commitment to youth employment.",
+    "contact": null,
+    "location": "Fulton Road",
+    "gifts": ["youth employment", "commerce", "business leadership"],
+    "source_text": "Rosa said the carnicería owner (unnamed, not present) employs teenagers for after-school delivery work"
+  },
+  {
+    "name": "Small engine repair business owner",
+    "category": "Individuals",
+    "description": "A skilled tradesperson who operates a successful small engine repair business through word-of-mouth reputation.",
+    "contact": null,
+    "location": "two blocks from meeting area",
+    "gifts": ["technical repair skills", "business management", "entrepreneurship"],
+    "source_text": "Jerome mentioned a guy two blocks over who does small engine repair out of his garage and \"never advertises but always busy\""
+  },
+  {
+    "name": "Community meeting participants",
+    "category": "Associations",
+    "description": "An informal gathering of neighborhood residents united by place and shared interest in community asset mapping and development.",
+    "contact": null,
+    "location": "Clark-Fulton neighborhood",
+    "gifts": ["collective intelligence", "community voice", "collaborative vision"],
+    "source_text": "Denise unrolled a large printed street map of Clark-Fulton and placed it on the center table. Participants were handed colored dot stickers"
+  }
+]

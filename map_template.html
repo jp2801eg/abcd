@@ -634,7 +634,7 @@ document.getElementById('toggle-btn').addEventListener('click', () => {
   if (currentView === 'zone') {
     document.getElementById('zone-view').style.display = 'none';
     document.getElementById('network-view').style.display = 'block';
-    document.getElementById('toggle-btn').textContent = 'Switch to Zone View';
+    document.getElementById('toggle-btn').textContent = 'Switch to Asset View';
     renderNetworkView(loadedAssets);
     currentView = 'network';
   } else {

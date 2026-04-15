@@ -1,0 +1,1505 @@
+[
+  {
+    "name": "Clark-Fulton Community Development Collaborative",
+    "category": "Associations",
+    "description": "Community-based organization hosting asset mapping and neighborhood development efforts.",
+    "contact": null,
+    "location": "Clark-Fulton Neighborhood, Cleveland, Ohio",
+    "gifts": [
+      "community organizing",
+      "asset mapping facilitation"
+    ],
+    "source_text": "Hosted by: Clark-Fulton Community Development Collaborative"
+  },
+  {
+    "name": "La Sagrada Familia Parish",
+    "category": "Institutions",
+    "description": "Faith-based institution providing gathering space and hosting community meetings.",
+    "contact": "Father Ignacio",
+    "location": "3636 Fulton Road, Cleveland, Ohio",
+    "gifts": [
+      "gathering space",
+      "venue access",
+      "religious community"
+    ],
+    "source_text": "thanked Father Ignacio and the parish for hosting, and acknowledged that the building has held neighborhood gatherings for over 40 years"
+  },
+  {
+    "name": "La Sagrada Familia Parish Hall",
+    "category": "Built/Natural Environment",
+    "description": "Physical gathering space with 40+ years of history hosting neighborhood events.",
+    "contact": null,
+    "location": "3636 Fulton Road, Cleveland, Ohio",
+    "gifts": [
+      "meeting space",
+      "community gathering venue"
+    ],
+    "source_text": "the building has held neighborhood gatherings for over 40 years"
+  },
+  {
+    "name": "Denise Okafor",
+    "category": "Individuals",
+    "description": "Community facilitator with expertise in asset-based community development and facilitation.",
+    "contact": "Denise Okafor",
+    "location": null,
+    "gifts": [
+      "facilitation",
+      "community development expertise"
+    ],
+    "source_text": "Facilitated by: Denise Okafor (Lead)"
+  },
+  {
+    "name": "Marcus Webb",
+    "category": "Individuals",
+    "description": "Co-facilitator and documentation specialist supporting community asset mapping.",
+    "contact": "Marcus Webb",
+    "location": null,
+    "gifts": [
+      "facilitation",
+      "documentation",
+      "meeting coordination"
+    ],
+    "source_text": "Facilitated by: Denise Okafor (Lead) and Marcus Webb (Co-facilitator / Scribe)"
+  },
+  {
+    "name": "Multilingual Community Member",
+    "category": "Individuals",
+    "description": "Resident with fluency in English, Spanish, and Arabic providing translation services and communication skills.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "language translation",
+      "cross-cultural communication"
+    ],
+    "source_text": "I speak English, Spanish, and a little Arabic — came in handy during COVID"
+  },
+  {
+    "name": "Plumber — Community Member",
+    "category": "Individuals",
+    "description": "Skilled plumber providing informal maintenance and repair services to neighbors.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "plumbing services",
+      "home maintenance",
+      "neighborly support"
+    ],
+    "source_text": "Plumbing. I've fixed sinks in half this block."
+  },
+  {
+    "name": "Plumbing Services — Neighborhood Skill",
+    "category": "Economic Assets",
+    "description": "Local plumbing expertise and informal service provision by a neighborhood resident.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "repair services",
+      "skilled labor",
+      "maintenance"
+    ],
+    "source_text": "Plumbing. I've fixed sinks in half this block."
+  },
+  {
+    "name": "Baker — Community Member",
+    "category": "Individuals",
+    "description": "Resident baker who provides food for neighbors during life transitions including births and deaths.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "baking",
+      "food provision",
+      "care",
+      "emotional support"
+    ],
+    "source_text": "I bake. I bring food to anyone who just had a baby or lost someone."
+  },
+  {
+    "name": "Baking and Food Provision",
+    "category": "Economic Assets",
+    "description": "Local baking skill and food provision that supports community care and connection.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "food production",
+      "catering",
+      "income generation potential"
+    ],
+    "source_text": "I bake. I bring food to anyone who just had a baby or lost someone."
+  },
+  {
+    "name": "Neighborhood Historian",
+    "category": "Individuals",
+    "description": "Long-term resident with deep knowledge of Clark-Fulton history dating back to the 1960s.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "oral history",
+      "neighborhood knowledge",
+      "cultural memory"
+    ],
+    "source_text": "I know this neighborhood's history back to the 1960s. I remember when Fulton Road was all Czech businesses."
+  },
+  {
+    "name": "Neighborhood History and Czech Heritage",
+    "category": "Cultural Assets",
+    "description": "Collective memory and heritage of Czech business history on Fulton Road maintained through long-term residents.",
+    "contact": null,
+    "location": "Fulton Road, Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "cultural heritage",
+      "historical identity",
+      "intergenerational knowledge"
+    ],
+    "source_text": "I know this neighborhood's history back to the 1960s. I remember when Fulton Road was all Czech businesses."
+  },
+  {
+    "name": "Youth Flag Football League",
+    "category": "Associations",
+    "description": "Informal youth sports program led by a community member on volunteer basis.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "youth engagement",
+      "sports programming",
+      "community building"
+    ],
+    "source_text": "I run a youth flag football league — unpaid"
+  },
+  {
+    "name": "Nurse — Community Member",
+    "category": "Individuals",
+    "description": "Healthcare professional employed at MetroHealth providing nursing expertise and availability to the neighborhood.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "healthcare knowledge",
+      "nursing skills",
+      "health advocacy"
+    ],
+    "source_text": "Nursing. Night shifts at MetroHealth but I'm here on my off days."
+  },
+  {
+    "name": "MetroHealth",
+    "category": "Institutions",
+    "description": "Healthcare institution providing employment and professional resources within reach of Clark-Fulton residents.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "employment",
+      "healthcare services",
+      "professional expertise"
+    ],
+    "source_text": "Night shifts at MetroHealth but I'm here on my off days."
+  },
+  {
+    "name": "Mechanic — Community Member",
+    "category": "Individuals",
+    "description": "Skilled auto mechanic providing informal car repair services to neighbors.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "auto repair",
+      "mechanical skills",
+      "transportation support"
+    ],
+    "source_text": "I fix cars. I don't advertise but my neighbors know."
+  },
+  {
+    "name": "Auto Repair Services",
+    "category": "Economic Assets",
+    "description": "Informal mechanical repair service available within the neighborhood.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "repair services",
+      "skilled labor",
+      "vehicle maintenance"
+    ],
+    "source_text": "I fix cars. I don't advertise but my neighbors know."
+  },
+  {
+    "name": "Recovery Mentor — Community Member",
+    "category": "Individuals",
+    "description": "Long-term recovery advocate (11+ years sober) helping neighbors in substance recovery.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "recovery support",
+      "peer mentoring",
+      "lived experience wisdom",
+      "hope"
+    ],
+    "source_text": "I've been sober 11 years and I help people find their way in."
+  },
+  {
+    "name": "Recovery Support Network",
+    "category": "Associations",
+    "description": "Informal peer support and mentoring network for people in recovery.",
+    "contact": null,
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "peer support",
+      "recovery mentoring",
+      "community belonging"
+    ],
+    "source_text": "I've been sober 11 years and I help people find their way in."
+  },
+  {
+    "name": "Hana",
+    "category": "Individuals",
+    "description": "Spanish and English interpreter providing multilingual access and communication support for the community.",
+    "contact": "Hana (interpreter)",
+    "location": "Clark-Fulton, Cleveland, Ohio",
+    "gifts": [
+      "interpretation",
+      "translation",
+      "language access",
+      "cultural mediation"
+    ],
+    "source_text": "Hana (interpreter, Spanish/English)"
+  },
+  {
+    "name": "Clark-Fulton Moms Network",
+    "category": "Associations",
+    "description": "Informal WhatsApp group of ~85 mostly Spanish-speaking members that shares school information, coordinates rides, and distributes safety alerts.",
+    "contact": "Rosa",
+    "location": null,
+    "gifts": [
+      "information sharing",
+      "ride coordination",
+      "safety alerts",
+      "school knowledge",
+      "community communication"
+    ],
+    "source_text": "Clark-Fulton Moms Network | Informal WhatsApp group, ~85 members, mostly Spanish-speaking; shares school info, ride coordination, safety alerts | Rosa"
+  },
+  {
+    "name": "St. Michael Parish Men's Group",
+    "category": "Associations",
+    "description": "Weekly Thursday meetings that organize and run a food pantry twice monthly.",
+    "contact": "Father Ignacio",
+    "location": null,
+    "gifts": [
+      "food assistance",
+      "regular gathering space",
+      "mutual support"
+    ],
+    "source_text": "St. Michael Parish Men's Group | Weekly Thursday meetings; runs food pantry 2x/month | Father Ignacio"
+  },
+  {
+    "name": "Fulton Rd. Block Club (3600 block)",
+    "category": "Associations",
+    "description": "Monthly neighborhood group active since 2003 that maintains alleys and plants trees.",
+    "contact": "Mrs. Cunningham",
+    "location": "3600 block of Fulton Rd.",
+    "gifts": [
+      "alley maintenance",
+      "tree planting",
+      "environmental stewardship",
+      "neighborhood organization"
+    ],
+    "source_text": "Fulton Rd. Block Club (3600 block) | Monthly; active since 2003; handles alley maintenance, tree planting | Mrs. Cunningham"
+  },
+  {
+    "name": "Clark Ave. Merchants Circle",
+    "category": "Associations",
+    "description": "Informal association of ~12 storefront owners that meets quarterly to coordinate as local business owners.",
+    "contact": "Sal",
+    "location": "El Rincon",
+    "gifts": [
+      "merchant coordination",
+      "local business network",
+      "economic knowledge"
+    ],
+    "source_text": "Clark Ave. Merchants Circle | Informal association of ~12 storefront owners; meets quarterly at El Rincon | Sal"
+  },
+  {
+    "name": "Clark Ave. Merchants Circle",
+    "category": "Economic Assets",
+    "description": "Association of ~12 storefront owners representing active retail presence and local commerce in the neighborhood.",
+    "contact": "Sal",
+    "location": null,
+    "gifts": [
+      "retail services",
+      "local employment",
+      "neighborhood commerce",
+      "business expertise"
+    ],
+    "source_text": "Clark Ave. Merchants Circle | Informal association of ~12 storefront owners; meets quarterly at El Rincon | Sal"
+  },
+  {
+    "name": "Cleveland Youth Boxing Club",
+    "category": "Associations",
+    "description": "Youth program with 30–40 regular participants that rents space at the recreation center.",
+    "contact": "DeShawn",
+    "location": "Recreation center",
+    "gifts": [
+      "youth engagement",
+      "athletic training",
+      "mentorship",
+      "youth gathering space"
+    ],
+    "source_text": "Cleveland Youth Boxing Club | Rents space at the rec center; 30–40 youth participants | DeShawn"
+  },
+  {
+    "name": "Recovery Community",
+    "category": "Associations",
+    "description": "Informal word-of-mouth network of residents in recovery who connect newcomers to AA, NA, and housing support.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "recovery support",
+      "peer mentorship",
+      "housing connections",
+      "community knowledge",
+      "mutual aid"
+    ],
+    "source_text": "Recovery community (informal) | Described as \"word of mouth\" — residents in recovery who connect newcomers to AA, NA, and housing"
+  },
+  {
+    "name": "Intergenerational Knitting Circle",
+    "category": "Associations",
+    "description": "Multigenerational group of 8–12 members with mixed backgrounds that meets at the library branch.",
+    "contact": "Bridget",
+    "location": "South Branch Library",
+    "gifts": [
+      "intergenerational connection",
+      "skill sharing",
+      "gathering space",
+      "community building"
+    ],
+    "source_text": "Intergenerational Knitting Circle | Meets at the library branch; 8–12 members; multigenerational, mixed background | Bridget"
+  },
+  {
+    "name": "Czech & Slovak Heritage Club",
+    "category": "Associations",
+    "description": "Legacy organization of the older generation that maintains cultural continuity through an annual picnic drawing ~60 people.",
+    "contact": "Mr. Prochazka",
+    "location": "Denison Park",
+    "gifts": [
+      "cultural gathering",
+      "heritage preservation",
+      "intergenerational connection",
+      "community celebration"
+    ],
+    "source_text": "Czech & Slovak Heritage Club (legacy) | Noted as less active; older generation; annual picnic at Denison Park still draws ~60 people | Mr. Prochazka"
+  },
+  {
+    "name": "Czech & Slovak Heritage Club",
+    "category": "Cultural Assets",
+    "description": "Legacy organization that maintains Czech and Slovak traditions and heritage through annual community gatherings.",
+    "contact": "Mr. Prochazka",
+    "location": "Denison Park",
+    "gifts": [
+      "cultural traditions",
+      "heritage knowledge",
+      "ethnic identity",
+      "historical continuity"
+    ],
+    "source_text": "Czech & Slovak Heritage Club (legacy) | Noted as less active; older generation; annual picnic at Denison Park still draws ~60 people | Mr. Prochazka"
+  },
+  {
+    "name": "MetroHealth System",
+    "category": "Institutions",
+    "description": "Major healthcare institution that employs multiple residents and serves as the primary healthcare provider for uninsured community members.",
+    "contact": "Jerome",
+    "location": "Main campus, W. 25th St.",
+    "gifts": [
+      "primary healthcare",
+      "employment",
+      "community health worker program",
+      "local hiring"
+    ],
+    "source_text": "MetroHealth System (main campus, W. 25th St.) — Multiple residents work there; also cited as primary healthcare provider for uninsured community members"
+  },
+  {
+    "name": "Cleveland Metropolitan School District",
+    "category": "Institutions",
+    "description": "Public school district serving the neighborhood through Lincoln-West HS and Orchard STEM School.",
+    "contact": "Darla (paraprofessional at Orchard)",
+    "location": null,
+    "gifts": [
+      "education",
+      "student services",
+      "community connection opportunities",
+      "youth development"
+    ],
+    "source_text": "Cleveland Metropolitan School District — Lincoln-West HS and Orchard STEM School both named"
+  },
+  {
+    "name": "Cleveland Public Library — South Branch",
+    "category": "Institutions",
+    "description": "Public library providing immigration help, ESL classes, job application assistance, and serving as a community gathering space.",
+    "contact": "Bridget",
+    "location": "Fulton & Denison",
+    "gifts": [
+      "immigration support",
+      "ESL education",
+      "job training",
+      "gathering space",
+      "public access to resources"
+    ],
+    "source_text": "Cleveland Public Library — South Branch (Fulton & Denison) — Named multiple times. Bridget: \"That library is doing more for this neighborhood than people realize. Immigration help, ESL, job applications — all of it.\""
+  },
+  {
+    "name": "La Sagrada Familia",
+    "category": "Institutions",
+    "description": "Faith institution hosting community meetings and serving as a gathering place.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "meeting space",
+      "faith community",
+      "community organizing space"
+    ],
+    "source_text": "La Sagrada Familia (hosting tonight's session)"
+  },
+  {
+    "name": "St. Michael the Archangel Parish",
+    "category": "Institutions",
+    "description": "Faith institution serving the community through religious services and community programs.",
+    "contact": "Father Ignacio",
+    "location": null,
+    "gifts": [
+      "faith community",
+      "food pantry operations",
+      "gathering space",
+      "spiritual services"
+    ],
+    "source_text": "St. Michael the Archangel Parish"
+  },
+  {
+    "name": "New Hope Baptist Church",
+    "category": "Institutions",
+    "description": "Faith institution running a summer program with free daily lunches that served 200 children last year.",
+    "contact": "Antoine",
+    "location": null,
+    "gifts": [
+      "youth summer program",
+      "food assistance",
+      "youth services",
+      "gathering space"
+    ],
+    "source_text": "New Hope Baptist Church (Antoine: \"They run a summer program, free lunch every day, 200 kids last year\")"
+  },
+  {
+    "name": "Pentecostal Church on Clark",
+    "category": "Institutions",
+    "description": "Faith institution noted as important to the newer Central American community.",
+    "contact": "Luz",
+    "location": "Clark",
+    "gifts": [
+      "faith community",
+      "cultural connection",
+      "immigrant support",
+      "spiritual services"
+    ],
+    "source_text": "Luz named a Pentecostal church on Clark she could not recall the name of — noted as important to the newer Central American community"
+  },
+  {
+    "name": "Cleveland Ward 14 Council Office",
+    "category": "Institutions",
+    "description": "Government office with mixed community engagement record, responsive on some issues like street lighting.",
+    "contact": "Yolanda, Terrell",
+    "location": null,
+    "gifts": [
+      "government services",
+      "street lighting coordination",
+      "civic advocacy"
+    ],
+    "source_text": "Cleveland Ward 14 Council office — mixed responses; Yolanda said they've been responsive on street lighting; Terrell said \"only during election years\""
+  },
+  {
+    "name": "Cuyahoga County JFS",
+    "category": "Institutions",
+    "description": "County social services agency providing resources, though noted as difficult to navigate and not always welcoming.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "social services",
+      "family support",
+      "resource access"
+    ],
+    "source_text": "Cuyahoga County JFS — named as a resource, but with reservations (\"hard to navigate,\" \"not always welcoming,\" multiple voices)"
+  },
+  {
+    "name": "Cleveland EMS Station 21",
+    "category": "Institutions",
+    "description": "Emergency services station with strong relationships and personal connections to longtime residents.",
+    "contact": "Tamara",
+    "location": "Fulton",
+    "gifts": [
+      "emergency services",
+      "community relationships",
+      "first responder care",
+      "neighborhood knowledge"
+    ],
+    "source_text": "Cleveland EMS Station 21 on Fulton — Tamara noted strong relationships between the crew and longtime residents; \"they know people by name\""
+  },
+  {
+    "name": "Denison Park",
+    "category": "Built/Natural Environment",
+    "description": "A well-used neighborhood park with basketball courts that serves as a daily social hub and provides recreational opportunities that keep youth engaged, though it has lighting concerns after dark.",
+    "contact": null,
+    "location": "Denison Park, Clark-Fulton",
+    "gifts": [
+      "recreational space",
+      "youth engagement",
+      "community gathering",
+      "sports facilities"
+    ],
+    "source_text": "Denison Park — received the most green dots. Jerome: \"That park kept me out of trouble. It keeps kids out of trouble now.\" Basketball courts cited as daily social hub in summer."
+  },
+  {
+    "name": "Brookside Park / Metropark",
+    "category": "Built/Natural Environment",
+    "description": "A nearby natural space with aesthetic value, though neighborhood residents feel disconnected from it and may not perceive it as accessible to them.",
+    "contact": null,
+    "location": "Brookside Park / Metropark, nearby Clark-Fulton",
+    "gifts": [
+      "natural space",
+      "green space",
+      "recreation potential"
+    ],
+    "source_text": "Brookside Park / Metropark (nearby) — mentioned as \"close but feels disconnected.\" Kenji: \"It's beautiful but people from this neighborhood don't feel like it's for them.\""
+  },
+  {
+    "name": "Community garden on W. 41st",
+    "category": "Built/Natural Environment",
+    "description": "A managed green space behind Orchard school providing garden plots for neighborhood residents and representing one of the most requested assets to expand.",
+    "contact": "Yolanda",
+    "location": "W. 41st, behind Orchard school, Clark-Fulton",
+    "gifts": [
+      "food production",
+      "green space",
+      "community gathering",
+      "horticultural education"
+    ],
+    "source_text": "Community garden on W. 41st (behind Orchard school) — Yolanda manages it; 18 plots; waitlist of 12 households. Named as one of the most requested assets to expand."
+  },
+  {
+    "name": "Fulton Road corridor",
+    "category": "Built/Natural Environment",
+    "description": "A commercial street corridor that serves as a hub for neighborhood commerce and daily life, though with changing character over time.",
+    "contact": null,
+    "location": "Fulton Road, Clark-Fulton",
+    "gifts": [
+      "commercial space",
+      "gathering space",
+      "retail access"
+    ],
+    "source_text": "Fulton Road corridor — mixed response. Long-time residents miss Czech/Slovak storefronts; newer residents value the taquerias, carnicerías, and quinceañera shops."
+  },
+  {
+    "name": "El Rincon Restaurant",
+    "category": "Built/Natural Environment",
+    "description": "A restaurant that functions as an informal community gathering place and hub for neighborhood social connection.",
+    "contact": null,
+    "location": "Fulton Road corridor, Clark-Fulton",
+    "gifts": [
+      "gathering space",
+      "community connection",
+      "food service"
+    ],
+    "source_text": "El Rincon Restaurant — named multiple times as a gathering place and informal community hub"
+  },
+  {
+    "name": "El Rincon Restaurant",
+    "category": "Economic Assets",
+    "description": "A local business that provides employment and economic activity within the neighborhood.",
+    "contact": null,
+    "location": "Fulton Road corridor, Clark-Fulton",
+    "gifts": [
+      "employment",
+      "local commerce",
+      "economic circulation"
+    ],
+    "source_text": "El Rincon Restaurant — named multiple times as a gathering place and informal community hub"
+  },
+  {
+    "name": "Czech Cultural Garden building on W. 38th",
+    "category": "Built/Natural Environment",
+    "description": "A vacant historic building that represents underutilized space with potential for community repurposing and cultural programming.",
+    "contact": null,
+    "location": "W. 38th, Clark-Fulton",
+    "gifts": [
+      "potential gathering space",
+      "cultural space potential"
+    ],
+    "source_text": "The old Czech Cultural Garden building on W. 38th — vacant for 3 years; yellow dot. Multiple people said \"someone should do something with that.\""
+  },
+  {
+    "name": "RTA Route 22",
+    "category": "Built/Natural Environment",
+    "description": "Public transportation infrastructure that provides critical connectivity for neighborhood residents to jobs and services.",
+    "contact": null,
+    "location": "Clark Ave., Clark-Fulton",
+    "gifts": [
+      "transportation access",
+      "mobility",
+      "economic connectivity"
+    ],
+    "source_text": "RTA Route 22 (Clark Ave.) — named as critical; concern about recent schedule cuts"
+  },
+  {
+    "name": "Sal's Auto Glass",
+    "category": "Economic Assets",
+    "description": "A long-established local business that employs neighborhood residents and demonstrates commitment to the community through local hiring and property stewardship.",
+    "contact": "Sal",
+    "location": "Clark Ave., Clark-Fulton",
+    "gifts": [
+      "employment",
+      "local hiring",
+      "business stability",
+      "economic anchor"
+    ],
+    "source_text": "Sal's Auto Glass (Clark Ave.) — Sal noted he employs 4 local residents, all from the neighborhood. Has resisted offers to sell the building: \"I've been here 22 years. This is my place.\""
+  },
+  {
+    "name": "Local restaurants and carnicerías",
+    "category": "Economic Assets",
+    "description": "Small food-service businesses that provide employment, particularly for teenagers, and economic activity within the neighborhood.",
+    "contact": null,
+    "location": "Fulton Road corridor, Clark-Fulton",
+    "gifts": [
+      "employment",
+      "youth employment",
+      "local commerce",
+      "food access"
+    ],
+    "source_text": "Several small restaurants along Fulton — Rosa said the carnicería owner (unnamed, not present) employs teenagers for after-school delivery work"
+  },
+  {
+    "name": "Yolanda's catering business",
+    "category": "Economic Assets",
+    "description": "A home-based food service business operated by a neighborhood resident, providing employment and economic opportunity.",
+    "contact": "Yolanda",
+    "location": "Clark-Fulton",
+    "gifts": [
+      "employment",
+      "food service",
+      "income generation",
+      "entrepreneurship"
+    ],
+    "source_text": "Home-based businesses mentioned: catering (Yolanda)"
+  },
+  {
+    "name": "Tamara's hair braiding business",
+    "category": "Economic Assets",
+    "description": "A home-based personal services business operated by a neighborhood resident, providing employment and economic opportunity.",
+    "contact": "Tamara",
+    "location": "Clark-Fulton",
+    "gifts": [
+      "employment",
+      "personal services",
+      "income generation",
+      "entrepreneurship"
+    ],
+    "source_text": "Home-based businesses mentioned: catering (Yolanda), hair braiding (Tamara)"
+  },
+  {
+    "name": "Neighborhood tax preparation service",
+    "category": "Economic Assets",
+    "description": "A home-based professional service operated by a trusted neighborhood resident, providing economic opportunity and knowledge sharing.",
+    "contact": null,
+    "location": "Clark-Fulton",
+    "gifts": [
+      "professional services",
+      "income generation",
+      "financial literacy support",
+      "trusted expertise"
+    ],
+    "source_text": "Home-based businesses mentioned: catering (Yolanda), hair braiding (Tamara), tax preparation (unnamed resident, \"very trusted,\" word of mouth only)"
+  },
+  {
+    "name": "Small engine repair business",
+    "category": "Economic Assets",
+    "description": "A garage-based repair service operated by a neighborhood resident that maintains steady business through word-of-mouth reputation.",
+    "contact": null,
+    "location": "Two blocks from meeting location, Clark-Fulton",
+    "gifts": [
+      "repair services",
+      "equipment maintenance",
+      "income generation",
+      "skilled labor"
+    ],
+    "source_text": "Jerome mentioned a guy two blocks over who does small engine repair out of his garage and \"never advertises but always busy\""
+  },
+  {
+    "name": "Neighborhood residents employed at MetroHealth and schools",
+    "category": "Individuals",
+    "description": "Multiple residents who work at major neighborhood institutions, representing skilled workforce, institutional connections, and economic participation.",
+    "contact": null,
+    "location": "Clark-Fulton",
+    "gifts": [
+      "workforce skills",
+      "institutional knowledge",
+      "economic participation",
+      "community connections"
+    ],
+    "source_text": "Multiple participants noted that neighborhood residents work at MetroHealth, the schools, and local businesses — but often don't know each other in that capacity."
+  },
+  {
+    "name": "Informally maintained vacant lot on W. 47th",
+    "category": "Built/Natural Environment",
+    "description": "A neighborhood green space that residents have collectively cared for and improved through informal stewardship over 5+ years.",
+    "contact": "Bridget",
+    "location": "W. 47th, Clark-Fulton",
+    "gifts": [
+      "green space",
+      "community stewardship",
+      "neighborhood beautification",
+      "gathering potential"
+    ],
+    "source_text": "Several vacant lots identified on the map — one on W. 47th that neighbors have informally maintained for 5+ years; Bridget: \"We mow it, we planted flowers, we treat it like ours. But it's not ours.\""
+  },
+  {
+    "name": "Jerome",
+    "category": "Individuals",
+    "description": "A neighborhood resident with personal experience of parks' positive impact on youth development and community wellbeing.",
+    "contact": "Jerome",
+    "location": "Clark-Fulton",
+    "gifts": [
+      "youth mentorship perspective",
+      "community history",
+      "civic engagement"
+    ],
+    "source_text": "Jerome: \"That park kept me out of trouble. It keeps kids out of trouble now.\""
+  },
+  {
+    "name": "Denise",
+    "category": "Individuals",
+    "description": "A community facilitator who organizes participatory mapping activities and creates space for community dialogue.",
+    "contact": "Denise",
+    "location": "Clark-Fulton",
+    "gifts": [
+      "community facilitation",
+      "engagement leadership",
+      "dialogue facilitation"
+    ],
+    "source_text": "Denise unrolled a large printed street map of Clark-Fulton and placed it on the center table."
+  },
+  {
+    "name": "Rosa",
+    "category": "Individuals",
+    "description": "A neighborhood resident who represents newer residents' perspectives and experiences of the changing neighborhood economy.",
+    "contact": "Rosa",
+    "location": "Clark-Fulton",
+    "gifts": [
+      "perspective on community change",
+      "civic engagement",
+      "bridging different resident groups"
+    ],
+    "source_text": "Rosa, gently: \"But it feeds my family now.\""
+  },
+  {
+    "name": "Kenji",
+    "category": "Individuals",
+    "description": "A resident who recognizes community assets and opportunities for better connection among neighborhood residents.",
+    "contact": "Kenji",
+    "location": "Clark-Fulton",
+    "gifts": [
+      "systems thinking",
+      "civic engagement",
+      "community connection building"
+    ],
+    "source_text": "Kenji: \"We're all part of the same economy but we don't connect the dots.\""
+  },
+  {
+    "name": "Mrs. Prochazka",
+    "category": "Individuals",
+    "description": "A long-time neighborhood resident who carries historical knowledge and cultural memory of the neighborhood's Czech/Slovak heritage.",
+    "contact": "Mrs. Prochazka",
+    "location": "Clark-Fulton",
+    "gifts": [
+      "neighborhood history",
+      "cultural memory",
+      "community connection"
+    ],
+    "source_text": "Mrs. Prochazka: \"I miss what it was.\""
+  },
+  {
+    "name": "Yolanda",
+    "category": "Individuals",
+    "description": "A neighborhood resident who manages the community garden, demonstrates environmental stewardship, and operates a home-based business.",
+    "contact": "Yolanda",
+    "location": "Clark-Fulton",
+    "gifts": [
+      "community garden management",
+      "horticultural knowledge",
+      "organizational leadership",
+      "entrepreneurship"
+    ],
+    "source_text": "Community garden on W. 41st (behind Orchard school) — Yolanda manages it; 18 plots; waitlist of 12 households."
+  },
+  {
+    "name": "Bridget",
+    "category": "Individuals",
+    "description": "A neighborhood resident who leads informal community stewardship and environmental care of shared spaces.",
+    "contact": "Bridget",
+    "location": "Clark-Fulton",
+    "gifts": [
+      "community stewardship",
+      "environmental leadership",
+      "civic engagement"
+    ],
+    "source_text": "Bridget: \"We mow it, we planted flowers, we treat it like ours. But it's not ours.\""
+  },
+  {
+    "name": "Mrs. Cunningham",
+    "category": "Individuals",
+    "description": "A long-time neighborhood resident who observes housing changes and their impacts on community connection.",
+    "contact": "Mrs. Cunningham",
+    "location": "Clark-Fulton",
+    "identity": [
+      "civic engagement",
+      "neighborhood knowledge"
+    ],
+    "source_text": "Mrs. Cunningham noted that 3 homes on her block are now rental-owned by an out-of-town LLC."
+  },
+  {
+    "name": "Darla",
+    "category": "Individuals",
+    "description": "A neighborhood resident who proposes innovative community economic solutions and recognizes potential for mutual aid.",
+    "contact": "Darla",
+    "location": "Clark-Fulton",
+    "gifts": [
+      "economic innovation",
+      "community organizing",
+      "mutual aid vision"
+    ],
+    "source_text": "Darla raised the idea of a neighborhood skills exchange or time bank — well-received"
+  },
+  {
+    "name": "Marcus",
+    "category": "Individuals",
+    "description": "A community organizer or coordinator tasked with researching and building connections to economic mutual aid infrastructure.",
+    "contact": "Marcus",
+    "location": "Clark-Fulton",
+    "gifts": [
+      "research and coordination",
+      "connection-building",
+      "community development"
+    ],
+    "source_text": "[ACTION: Research existing time bank / mutual aid infrastructure in Cleveland — Marcus to follow up]"
+  },
+  {
+    "name": "Fulton Road commercial corridor storefronts",
+    "category": "Cultural Assets",
+    "description": "Historic Czech/Slovak storefronts and newer immigrant-owned taquerias and specialty shops that carry cultural identity and traditions.",
+    "contact": null,
+    "location": "Fulton Road, Clark-Fulton",
+    "gifts": [
+      "cultural identity",
+      "heritage preservation",
+      "ethnic traditions",
+      "cultural continuity"
+    ],
+    "source_text": "Long-time residents miss Czech/Slovak storefronts; newer residents value the taquerias, carnicerías, and quinceañera shops."
+  },
+  {
+    "name": "Mr. Prochazka",
+    "category": "Individuals",
+    "description": "Community member with deep knowledge of Czech and Slovak heritage, family history of building in the neighborhood, and active organizer of cultural traditions.",
+    "contact": "Mr. Prochazka",
+    "location": null,
+    "gifts": [
+      "historical knowledge",
+      "cultural leadership",
+      "community organizing"
+    ],
+    "source_text": "Mr. Prochazka spoke at length about the Czech and Slovak families who built the parish, the butcher shops, the sokol (gymnastic) halls. \"My grandfather built two of those buildings with his hands.\""
+  },
+  {
+    "name": "Mrs. Cunningham",
+    "category": "Individuals",
+    "description": "Community member who carries family history of Black migration to the neighborhood and can articulate the significance of the area as a historical destination.",
+    "contact": "Mrs. Cunningham",
+    "location": null,
+    "gifts": [
+      "historical knowledge",
+      "community memory",
+      "cultural witness"
+    ],
+    "source_text": "Mrs. Cunningham recalled the neighborhood's history as a destination for Black families during the Great Migration: \"My family came from Mississippi in 1951. This block was our foothold.\""
+  },
+  {
+    "name": "Luz",
+    "category": "Individuals",
+    "description": "Community member representing Central American families who has cultural knowledge and articulates the contributions of newer immigrant communities.",
+    "contact": "Luz",
+    "location": null,
+    "gifts": [
+      "cultural knowledge",
+      "immigrant community leadership",
+      "bridge-building"
+    ],
+    "source_text": "Luz described how Central American families, many from Guatemala and Honduras, began arriving in the 1990s and 2000s: \"We made this neighborhood ours, too. The food, the church, the quinceañeras — that's culture, that's history.\""
+  },
+  {
+    "name": "Rosa",
+    "category": "Individuals",
+    "description": "Community member with knowledge of quinceañera traditions and their role as a neighborhood cultural practice.",
+    "contact": "Rosa",
+    "location": null,
+    "gifts": [
+      "cultural knowledge",
+      "community celebration leadership"
+    ],
+    "source_text": "Rosa described it as \"like a neighborhood festival, every Saturday in spring and summer. The dresses, the limos, the families — the whole block celebrates.\""
+  },
+  {
+    "name": "Antoine",
+    "category": "Individuals",
+    "description": "Community member and long-term organizer of cultural celebrations and community gatherings.",
+    "contact": "Antoine",
+    "location": null,
+    "gifts": [
+      "event organizing",
+      "community leadership",
+      "institutional partnership"
+    ],
+    "source_text": "Antoine: \"We've been doing it for 19 years. Last year, 400 people came.\""
+  },
+  {
+    "name": "DeShawn",
+    "category": "Individuals",
+    "description": "Community member involved with the boxing club and mentor to young men developing spoken word performance skills.",
+    "contact": "DeShawn",
+    "location": null,
+    "gifts": [
+      "mentorship",
+      "youth engagement",
+      "arts facilitation"
+    ],
+    "source_text": "DeShawn mentioned that a few young men from the boxing club have started doing spoken word at a coffee shop on W. 25th"
+  },
+  {
+    "name": "Hana",
+    "category": "Individuals",
+    "description": "Community member who recognizes and articulates the value of oral history and immigrant community knowledge-keeping.",
+    "contact": "Hana",
+    "location": null,
+    "gifts": [
+      "historical preservation",
+      "cultural documentation",
+      "immigrant community knowledge"
+    ],
+    "source_text": "Hana noted that oral history is particularly important in the immigrant community — \"people carry whole histories in their memory. They just don't get asked.\""
+  },
+  {
+    "name": "Terrell",
+    "category": "Individuals",
+    "description": "Long-time neighborhood resident who represents unconnected community members and potential bridge between cultural communities.",
+    "contact": "Terrell",
+    "location": null,
+    "gifts": [
+      "cross-cultural bridge potential",
+      "long-term residency"
+    ],
+    "source_text": "Terrell said, \"I didn't know about the Czech picnic. I've lived two blocks from that park for eight years.\""
+  },
+  {
+    "name": "Young men from boxing club",
+    "category": "Individuals",
+    "description": "Youth with emerging spoken word and performance skills who are developing artistic expression.",
+    "contact": "DeShawn",
+    "location": null,
+    "gifts": [
+      "artistic expression",
+      "spoken word",
+      "youth leadership"
+    ],
+    "source_text": "a few young men from the boxing club have started doing spoken word at a coffee shop on W. 25th"
+  },
+  {
+    "name": "Czech/Slovak Heritage Picnic",
+    "category": "Associations",
+    "description": "Annual gathering that organizes and sustains Czech and Slovak cultural traditions and community connection.",
+    "contact": "Mr. Prochazka",
+    "location": "Denison Park",
+    "gifts": [
+      "cultural celebration",
+      "intergenerational connection",
+      "community gathering"
+    ],
+    "source_text": "Annual Czech/Slovak Heritage Picnic at Denison Park — Mr. Prochazka; ~60 attendees, homemade kolaches, polka music"
+  },
+  {
+    "name": "Quinceañera celebrations on Fulton",
+    "category": "Associations",
+    "description": "Informal but consistent community tradition that brings families and neighbors together across the neighborhood.",
+    "contact": "Rosa",
+    "location": "Fulton",
+    "gifts": [
+      "community gathering",
+      "cultural celebration",
+      "intergenerational connection",
+      "neighborhood visibility"
+    ],
+    "source_text": "Quinceañera season on Fulton — Rosa described it as \"like a neighborhood festival, every Saturday in spring and summer. The dresses, the limos, the families — the whole block celebrates.\""
+  },
+  {
+    "name": "New Hope Baptist Juneteenth Block Party",
+    "category": "Associations",
+    "description": "Long-established annual celebration that mobilizes community participation and demonstrates sustained community organizing capacity.",
+    "contact": "Antoine",
+    "location": null,
+    "gifts": [
+      "community celebration",
+      "cultural commemoration",
+      "large-scale gathering capacity"
+    ],
+    "source_text": "New Hope Baptist's Juneteenth Block Party — Antoine: \"We've been doing it for 19 years. Last year, 400 people came.\""
+  },
+  {
+    "name": "Día de los Muertos altar at La Sagrada Familia",
+    "category": "Associations",
+    "description": "Informal gathering practice that creates cross-cultural participation and honors shared human experiences across communities.",
+    "contact": null,
+    "location": "La Sagrada Familia",
+    "gifts": [
+      "cross-cultural bridge",
+      "community gathering",
+      "cultural inclusion",
+      "remembrance space"
+    ],
+    "source_text": "Informal Día de los Muertos altar at La Sagrada Familia — described as increasingly attended by non-Latino neighbors: \"People come who didn't grow up with it. They bring photos of their people too.\""
+  },
+  {
+    "name": "Boxing club",
+    "category": "Associations",
+    "description": "Youth-serving organization that provides space for development of artistic and performance skills.",
+    "contact": "DeShawn",
+    "location": null,
+    "gifts": [
+      "youth development",
+      "artistic expression platform",
+      "mentorship"
+    ],
+    "source_text": "a few young men from the boxing club have started doing spoken word at a coffee shop on W. 25th"
+  },
+  {
+    "name": "Connector team",
+    "category": "Associations",
+    "description": "Newly forming informal group committed to linking community assets and facilitating collaboration across cultural and organizational boundaries.",
+    "contact": "Denise",
+    "location": null,
+    "gifts": [
+      "asset coordination",
+      "community networking",
+      "cross-sector collaboration"
+    ],
+    "source_text": "who would be willing to be part of a follow-up \"connector team\" to help link these assets to each other? Eleven hands went up."
+  },
+  {
+    "name": "New Hope Baptist",
+    "category": "Institutions",
+    "description": "Faith community institution that organizes major annual celebration demonstrating institutional capacity and community leadership.",
+    "contact": "Antoine",
+    "location": null,
+    "gifts": [
+      "community gathering space",
+      "event organizing capacity",
+      "community leadership"
+    ],
+    "source_text": "New Hope Baptist's Juneteenth Block Party — Antoine: \"We've been doing it for 19 years. Last year, 400 people came.\""
+  },
+  {
+    "name": "La Sagrada Familia",
+    "category": "Institutions",
+    "description": "Faith community institution that hosts cultural gatherings and demonstrates cross-cultural openness and inclusion.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "gathering space",
+      "cultural celebration support",
+      "cross-cultural bridge"
+    ],
+    "source_text": "Informal Día de los Muertos altar at La Sagrada Familia — described as increasingly attended by non-Latino neighbors"
+  },
+  {
+    "name": "MetroHealth community health worker program",
+    "category": "Institutions",
+    "description": "Health institution with community engagement resources being identified for partnership potential.",
+    "contact": "Jerome",
+    "location": null,
+    "gifts": [
+      "health services",
+      "community health expertise",
+      "institutional resources"
+    ],
+    "source_text": "Confirm MetroHealth community health worker program details"
+  },
+  {
+    "name": "Orchard STEM",
+    "category": "Institutions",
+    "description": "Educational institution being identified as potential community partnership resource.",
+    "contact": "Darla",
+    "location": null,
+    "gifts": [
+      "educational resources",
+      "youth development",
+      "community partnership capacity"
+    ],
+    "source_text": "Reach out to Orchard STEM principal re: community partnership"
+  },
+  {
+    "name": "Pentecostal church",
+    "category": "Institutions",
+    "description": "Faith community institution representing untapped institutional asset being invited to community engagement.",
+    "contact": "Luz",
+    "location": null,
+    "gifts": [
+      "community gathering space",
+      "faith community network",
+      "cultural identity support"
+    ],
+    "source_text": "Invite unnamed Pentecostal church to next session"
+  },
+  {
+    "name": "Denison Park",
+    "category": "Built/Natural Environment",
+    "description": "Public green space that hosts cultural celebrations and serves as gathering place for community traditions.",
+    "contact": null,
+    "location": "Denison Park",
+    "gifts": [
+      "gathering space",
+      "celebration venue",
+      "recreation space"
+    ],
+    "source_text": "Annual Czech/Slovak Heritage Picnic at Denison Park"
+  },
+  {
+    "name": "Coffee shop on W. 25th",
+    "category": "Built/Natural Environment",
+    "description": "Public business space that provides venue for emerging artistic expression and youth performance.",
+    "contact": null,
+    "location": "W. 25th",
+    "gifts": [
+      "performance venue",
+      "public gathering space",
+      "arts support"
+    ],
+    "source_text": "a few young men from the boxing club have started doing spoken word at a coffee shop on W. 25th"
+  },
+  {
+    "name": "Fulton Street",
+    "category": "Built/Natural Environment",
+    "description": "Neighborhood street that serves as site of recurring cultural celebrations and community visibility.",
+    "contact": null,
+    "location": "Fulton",
+    "gifts": [
+      "gathering space",
+      "cultural celebration venue",
+      "neighborhood vitality"
+    ],
+    "source_text": "Quinceañera season on Fulton"
+  },
+  {
+    "name": "Vacant lot on W. 47th",
+    "category": "Built/Natural Environment",
+    "description": "Unused land identified as potential asset for community development if ownership can be determined.",
+    "contact": "Bridget",
+    "location": "W. 47th",
+    "gifts": [
+      "potential development site",
+      "community space potential"
+    ],
+    "source_text": "Identify owner of vacant lot on W. 47th — Cuyahoga County land records"
+  },
+  {
+    "name": "El Rincon",
+    "category": "Economic Assets",
+    "description": "Local business that supports community cultural expression and hosts public art.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "local employment",
+      "gathering space",
+      "arts support",
+      "neighborhood anchor"
+    ],
+    "source_text": "Mural on the side of El Rincon (painted 2019 by a local artist, name not recalled)"
+  },
+  {
+    "name": "Local butcher shops",
+    "category": "Economic Assets",
+    "description": "Historical neighborhood businesses that were central to Czech and Slovak community economic life and identity.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "historical employment",
+      "cultural food tradition",
+      "community gathering"
+    ],
+    "source_text": "Mr. Prochazka spoke at length about the Czech and Slovak families who built the parish, the butcher shops, the sokol (gymnastic) halls."
+  },
+  {
+    "name": "Czech and Slovak heritage — family history",
+    "category": "Cultural Assets",
+    "description": "Living cultural heritage carried by community members and expressed through language, building traditions, and family memory.",
+    "contact": "Mr. Prochazka",
+    "location": null,
+    "gifts": [
+      "cultural identity",
+      "historical knowledge",
+      "skill traditions",
+      "intergenerational connection"
+    ],
+    "source_text": "Mr. Prochazka spoke at length about the Czech and Slovak families who built the parish, the butcher shops, the sokol (gymnastic) halls. \"My grandfather built two of those buildings with his hands. That's not gone — it's in the walls.\""
+  },
+  {
+    "name": "Black migration history and family legacy",
+    "category": "Cultural Assets",
+    "description": "Living cultural memory and identity rooted in Great Migration history and family connections to place.",
+    "contact": "Mrs. Cunningham",
+    "location": null,
+    "gifts": [
+      "cultural identity",
+      "historical knowledge",
+      "family continuity",
+      "sense of place"
+    ],
+    "source_text": "Mrs. Cunningham recalled the neighborhood's history as a destination for Black families during the Great Migration: \"My family came from Mississippi in 1951. This block was our foothold.\""
+  },
+  {
+    "name": "Central American culture and traditions",
+    "category": "Cultural Assets",
+    "description": "Living cultural heritage of Guatemalan and Honduran families expressed through food, religion, and celebration traditions.",
+    "contact": "Luz",
+    "location": null,
+    "gifts": [
+      "cultural identity",
+      "food traditions",
+      "celebration practices",
+      "language",
+      "spiritual traditions"
+    ],
+    "source_text": "Luz described how Central American families, many from Guatemala and Honduras, began arriving in the 1990s and 2000s: \"We made this neighborhood ours, too. The food, the church, the quinceañeras — that's culture, that's history.\""
+  },
+  {
+    "name": "Czech/Slovak Heritage Picnic",
+    "category": "Cultural Assets",
+    "description": "Annual celebration that transmits Czech and Slovak cultural traditions including food, music, and community identity.",
+    "contact": "Mr. Prochazka",
+    "location": "Denison Park",
+    "gifts": [
+      "cultural transmission",
+      "heritage celebration",
+      "intergenerational learning",
+      "tradition maintenance"
+    ],
+    "source_text": "Annual Czech/Slovak Heritage Picnic at Denison Park — Mr. Prochazka; ~60 attendees, homemade kolaches, polka music"
+  },
+  {
+    "name": "Quinceañera tradition",
+    "category": "Cultural Assets",
+    "description": "Living cultural tradition marking life passage and family identity that is visible and shared across the community.",
+    "contact": "Rosa",
+    "location": "Fulton",
+    "gifts": [
+      "cultural celebration",
+      "family identity",
+      "coming-of-age tradition",
+      "community visibility"
+    ],
+    "source_text": "Quinceañera season on Fulton — Rosa described it as \"like a neighborhood festival, every Saturday in spring and summer. The dresses, the limos, the families — the whole block celebrates.\""
+  },
+  {
+    "name": "Juneteenth commemoration",
+    "category": "Cultural Assets",
+    "description": "Annual celebration that transmits historical knowledge and cultural memory of Black liberation and community identity.",
+    "contact": "Antoine",
+    "location": null,
+    "gifts": [
+      "historical commemoration",
+      "cultural identity",
+      "community solidarity",
+      "intergenerational learning"
+    ],
+    "source_text": "New Hope Baptist's Juneteenth Block Party — Antoine: \"We've been doing it for 19 years. Last year, 400 people came.\""
+  },
+  {
+    "name": "Día de los Muertos tradition",
+    "category": "Cultural Assets",
+    "description": "Living cultural practice that honors deceased loved ones and creates cross-cultural spaces for remembrance and belonging.",
+    "contact": null,
+    "location": "La Sagrada Familia",
+    "gifts": [
+      "cultural tradition",
+      "spiritual practice",
+      "cross-cultural inclusion",
+      "remembrance",
+      "identity affirmation"
+    ],
+    "source_text": "Informal Día de los Muertos altar at La Sagrada Familia — described as increasingly attended by non-Latino neighbors: \"People come who didn't grow up with it. They bring photos of their people too.\""
+  },
+  {
+    "name": "Neighborhood history mural",
+    "category": "Cultural Assets",
+    "description": "Visual art that depicts and celebrates neighborhood history across multiple cultural communities.",
+    "contact": null,
+    "location": "El Rincon",
+    "gifts": [
+      "cultural representation",
+      "historical documentation",
+      "community pride",
+      "public art"
+    ],
+    "source_text": "Mural on the side of El Rincon (painted 2019 by a local artist, name not recalled) — multiple people mentioned it; described as showing neighborhood history across cultures"
+  },
+  {
+    "name": "Spoken word and performance",
+    "category": "Cultural Assets",
+    "description": "Emerging artistic and literary tradition being developed by young people to express identity and experience.",
+    "contact": "DeShawn",
+    "location": "W. 25th",
+    "gifts": [
+      "artistic expression",
+      "youth voice",
+      "cultural narrative",
+      "community storytelling"
+    ],
+    "source_text": "a few young men from the boxing club have started doing spoken word at a coffee shop on W. 25th — \"it started as something to do after sparring. Now they perform.\""
+  },
+  {
+    "name": "Oral history tradition",
+    "category": "Cultural Assets",
+    "description": "Living practice of memory-keeping and knowledge transmission particularly important in immigrant communities.",
+    "contact": "Hana",
+    "location": null,
+    "gifts": [
+      "historical knowledge",
+      "cultural transmission",
+      "identity preservation",
+      "intergenerational connection"
+    ],
+    "source_text": "Hana noted that oral history is particularly important in the immigrant community — \"people carry whole histories in their memory. They just don't get asked.\""
+  },
+  {
+    "name": "Sokol (gymnastic) halls",
+    "category": "Cultural Assets",
+    "description": "Historical institutions that preserved Czech and Slovak cultural identity and community gathering traditions.",
+    "contact": "Mr. Prochazka",
+    "location": null,
+    "gifts": [
+      "cultural preservation",
+      "community gathering",
+      "physical culture tradition",
+      "cultural identity"
+    ],
+    "source_text": "Mr. Prochazka spoke at length about the Czech and Slovak families who built the parish, the butcher shops, the sokol (gymnastic) halls."
+  },
+  {
+    "name": "Marcus Webb",
+    "category": "Individuals",
+    "description": "Community facilitator with capacity to compile and synthesize meeting notes and asset information.",
+    "contact": "Marcus Webb",
+    "location": null,
+    "gifts": [
+      "facilitation",
+      "documentation",
+      "synthesis"
+    ],
+    "source_text": "Notes compiled by Marcus Webb."
+  },
+  {
+    "name": "Denise Okafor",
+    "category": "Individuals",
+    "description": "Community member with review capacity and editorial oversight for community development documentation.",
+    "contact": "Denise Okafor",
+    "location": null,
+    "gifts": [
+      "review",
+      "oversight",
+      "quality assurance"
+    ],
+    "source_text": "Draft circulated to Denise Okafor for review on April 11, 2025."
+  },
+  {
+    "name": "Terrell",
+    "category": "Individuals",
+    "description": "Community member identified as a potential cross-cultural connection facilitator through relational bridge-building.",
+    "contact": "Terrell",
+    "location": null,
+    "gifts": [
+      "cross-cultural connection",
+      "relationship building"
+    ],
+    "source_text": "Key relational bridge: Terrell/Mr. Prochazka exchange — potential for cross-cultural connection facilitation"
+  },
+  {
+    "name": "Mr. Prochazka",
+    "category": "Individuals",
+    "description": "Community member identified as a potential cross-cultural connection facilitator through relational bridge-building.",
+    "contact": "Mr. Prochazka",
+    "location": null,
+    "gifts": [
+      "cross-cultural connection",
+      "relationship building"
+    ],
+    "source_text": "Key relational bridge: Terrell/Mr. Prochazka exchange — potential for cross-cultural connection facilitation"
+  },
+  {
+    "name": "Clark-Fulton Community Development Collaborative",
+    "category": "Associations",
+    "description": "Collaborative group overseeing community development work and governance of shared information and initiatives.",
+    "contact": "Clark-Fulton Community Development Collaborative",
+    "location": null,
+    "gifts": [
+      "coordination",
+      "governance",
+      "community stewardship"
+    ],
+    "source_text": "Not for external distribution without review by the Clark-Fulton Community Development Collaborative."
+  },
+  {
+    "name": "Cultural assets",
+    "category": "Cultural Assets",
+    "description": "Community traditions, expressions, and heritage identified as the strongest energy present in the community.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "cultural expression",
+      "community identity",
+      "heritage transmission"
+    ],
+    "source_text": "Strongest energy: Cultural assets section"
+  },
+  {
+    "name": "Home-based and informal economy",
+    "category": "Economic Assets",
+    "description": "Local economic activity and income-generation occurring through informal and home-based work, identified as underexplored.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "income generation",
+      "local economic activity",
+      "employment"
+    ],
+    "source_text": "Most underexplored: Economic assets — particularly home-based and informal economy"
+  },
+  {
+    "name": "JFS",
+    "category": "Institutions",
+    "description": "Formal organization identified as having institutional trust gap that will shape how future initiatives are structured.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "formal services"
+    ],
+    "source_text": "Institutional trust gap (JFS, Ward office) will shape how any future initiatives are structured"
+  },
+  {
+    "name": "Ward office",
+    "category": "Institutions",
+    "description": "Government institution identified as having institutional trust gap that will shape how future initiatives are structured.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "government services"
+    ],
+    "source_text": "Institutional trust gap (JFS, Ward office) will shape how any future initiatives are structured"
+  }
+]
