@@ -1,0 +1,815 @@
+[
+  {
+    "name": "Julie Ilcin",
+    "category": "Individuals",
+    "description": "A resident with deep roots in neighborhood association networks who brings organizing experience and knowledge of city government processes.",
+    "contact": "Julie Ilcin",
+    "location": "Euclid",
+    "gifts": [
+      "organizing experience",
+      "relationships with block club leaders",
+      "knowledge of city government processes"
+    ],
+    "source_text": "Julie Ilcin is a resident with deep roots in Euclid's neighborhood association network. She brings organizing experience, relationships with block club leaders across the city, and knowledge of city government processes."
+  },
+  {
+    "name": "Martha Nieset",
+    "category": "Individuals",
+    "description": "A longtime resident and community connector with relationships across faith communities and civic organizations, experienced in community documentation and storytelling.",
+    "contact": "Martha Nieset",
+    "location": "Euclid",
+    "gifts": [
+      "community connections",
+      "relationships across faith communities and schools",
+      "community documentation",
+      "storytelling"
+    ],
+    "source_text": "Martha Nieset is a longtime resident and community connector. She has relationships across faith communities, schools, and civic organizations, and brings experience in community documentation and storytelling."
+  },
+  {
+    "name": "Kay O'Donnell",
+    "category": "Individuals",
+    "description": "Director of the Euclid Hunger Center who brings institutional resources, food access networks, and knowledge of which families need support across the city.",
+    "contact": "Kay O'Donnell",
+    "location": "Euclid",
+    "gifts": [
+      "food access knowledge",
+      "network of food partners",
+      "knowledge of family needs"
+    ],
+    "source_text": "Kay O'Donnell is the Director of the Euclid Hunger Center, bringing institutional resources, a network of food access partners, and knowledge of which families are most in need across the city."
+  },
+  {
+    "name": "Stephen Langel",
+    "category": "Individuals",
+    "description": "Works in mainstream public media and brings communications skills, media relationships, and the ability to amplify community stories to wider audiences.",
+    "contact": "Stephen Langel",
+    "location": null,
+    "gifts": [
+      "communications skills",
+      "media relationships",
+      "ability to amplify stories"
+    ],
+    "source_text": "Stephen Langel works in mainstream public media and brings communications skills, media relationships, and the ability to amplify community stories to wider audiences."
+  },
+  {
+    "name": "Corey Russell",
+    "category": "Individuals",
+    "description": "Principal of Euclid High School who brings institutional authority, relationships with hundreds of families, access to school facilities, and knowledge of youth needs.",
+    "contact": "Corey Russell",
+    "location": "Euclid High School",
+    "gifts": [
+      "relationships with families",
+      "access to school facilities",
+      "knowledge of youth needs",
+      "institutional authority"
+    ],
+    "source_text": "Corey Russell is the Principal of Euclid High School, bringing institutional authority, relationships with hundreds of families, access to school facilities, and knowledge of youth needs."
+  },
+  {
+    "name": "Demetrius Williams",
+    "category": "Individuals",
+    "description": "Youth Ambassador who brings firsthand knowledge of youth needs, peer networks, and the credibility to engage young people.",
+    "contact": "Demetrius Williams",
+    "location": "Euclid",
+    "gifts": [
+      "youth perspective",
+      "peer networks",
+      "credibility with young people",
+      "knowledge of youth needs"
+    ],
+    "source_text": "Demetrius Williams is a Youth Ambassador bringing firsthand knowledge of what youth in Euclid need, peer networks, and the energy and credibility to engage young people."
+  },
+  {
+    "name": "Deb Kroemer",
+    "category": "Individuals",
+    "description": "A resident with community history expertise who has documented neighborhood stories and transitions over three decades, serving as a living archive of cultural memory.",
+    "contact": "Deb Kroemer",
+    "location": "Euclid",
+    "gifts": [
+      "community history expertise",
+      "documentation of neighborhood stories",
+      "cultural memory",
+      "historical knowledge"
+    ],
+    "source_text": "Deb Kroemer is a resident with community history expertise, having documented neighborhood stories and transitions in Euclid over three decades. She is a living archive of the city's cultural memory."
+  },
+  {
+    "name": "Euclid Democratic Club",
+    "category": "Associations",
+    "description": "A civic organizing hub that has operated for decades with strong turnout infrastructure and relationships across the city's neighborhoods.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "civic organizing",
+      "turnout infrastructure",
+      "neighborhood relationships",
+      "long-standing network"
+    ],
+    "source_text": "The Euclid Democratic Club has been a civic organizing hub for decades, with strong turnout infrastructure and relationships across the city's neighborhoods."
+  },
+  {
+    "name": "Neighbor Circles",
+    "category": "Associations",
+    "description": "Structured spaces created through the Mayor's Office that allow residents to connect with city leadership.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "resident-leadership connection",
+      "structured dialogue space",
+      "civic engagement"
+    ],
+    "source_text": "Neighbor Circles through the Mayor's Office create structured spaces for residents to connect with city leadership."
+  },
+  {
+    "name": "Youth Council in Euclid",
+    "category": "Associations",
+    "description": "An organizational partner committed to helping youth identify issues and solve their own problems with resources and support.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "youth leadership",
+      "youth problem-solving",
+      "youth voice"
+    ],
+    "source_text": "Youth Council in Euclid, Resource Clearinghouse."
+  },
+  {
+    "name": "Euclid Hunger Center",
+    "category": "Institutions",
+    "description": "A formal organization addressing food access and supporting families in need across the city.",
+    "contact": "Kay O'Donnell, Director",
+    "location": "Euclid",
+    "gifts": [
+      "food assistance",
+      "family support",
+      "food access partnerships"
+    ],
+    "source_text": "Kay O'Donnell is the Director of the Euclid Hunger Center, bringing institutional resources, a network of food access partners, and knowledge of which families are most in need across the city."
+  },
+  {
+    "name": "Euclid High School",
+    "category": "Institutions",
+    "description": "A formal educational institution serving hundreds of families and providing access to school facilities and resources.",
+    "contact": "Corey Russell, Principal",
+    "location": "Euclid",
+    "gifts": [
+      "education",
+      "family relationships",
+      "facility access",
+      "gymnasium",
+      "meeting rooms",
+      "green spaces"
+    ],
+    "source_text": "Corey Russell is the Principal of Euclid High School, bringing institutional authority, relationships with hundreds of families, access to school facilities, and knowledge of youth needs."
+  },
+  {
+    "name": "Schools in Euclid",
+    "category": "Institutions",
+    "description": "Trusted anchors in every neighborhood serving as community institutions with facilities available for community use.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "community trust",
+      "facilities access",
+      "gymnasiums",
+      "meeting rooms",
+      "green spaces",
+      "education"
+    ],
+    "source_text": "Schools in Euclid serve as trusted anchors in every neighborhood and have gymnasiums, meeting rooms, and green spaces available for community use."
+  },
+  {
+    "name": "Euclid Collaborative",
+    "category": "Institutions",
+    "description": "An organizational partner that comprises a website and booklet of all resources in Euclid, serving as a resource coordination hub.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "resource inventory",
+      "information access",
+      "resource coordination"
+    ],
+    "source_text": "Euclid Collaborative comprising a website and booklet of all resources in Euclid."
+  },
+  {
+    "name": "Resource Clearinghouse",
+    "category": "Institutions",
+    "description": "An organizational partner serving as a resource hub where the police force refers people to access support.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "resource referral",
+      "support access",
+      "information hub"
+    ],
+    "source_text": "Police force will refer people to resource center."
+  },
+  {
+    "name": "Euclid Police Force",
+    "category": "Institutions",
+    "description": "A formal institution that partners with community resources by referring people to support services and resource centers.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "referral to resources",
+      "public safety",
+      "community partnership"
+    ],
+    "source_text": "Police force will refer people to resource center."
+  },
+  {
+    "name": "Sims Park",
+    "category": "Built/Natural Environment",
+    "description": "A beloved community gathering space where summer concerts and cultural events have been held for generations, rooted in 40 years of outdoor community celebration tradition.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "gathering space",
+      "event venue",
+      "outdoor recreation",
+      "cultural celebration space"
+    ],
+    "source_text": "Sims Park is a beloved gathering space where summer concerts and cultural events have been held for generations, rooted in a tradition of outdoor community celebration that dates back 40 years."
+  },
+  {
+    "name": "Euclid neighborhoods",
+    "category": "Built/Natural Environment",
+    "description": "Physical neighborhoods that serve as the foundation for localized community organizing and connection.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "neighborhood gathering spaces",
+      "street meeting locations",
+      "organizing base"
+    ],
+    "source_text": "Street meetings, localized groups in neighborhoods."
+  },
+  {
+    "name": "Sims Park tradition",
+    "category": "Cultural Assets",
+    "description": "A 40-year tradition of outdoor community celebration through summer concerts and food that represents shared cultural identity and belonging.",
+    "contact": null,
+    "location": "Sims Park, Euclid",
+    "gifts": [
+      "shared celebration",
+      "cultural continuity",
+      "community identity",
+      "intergenerational connection"
+    ],
+    "source_text": "Sims Park is a beloved gathering space where summer concerts and cultural events have been held for generations, rooted in a tradition of outdoor community celebration that dates back 40 years."
+  },
+  {
+    "name": "Euclid's neighborhood history and memory",
+    "category": "Cultural Assets",
+    "description": "Documented community stories and transitions that represent the shared cultural heritage and history of Euclid's neighborhoods.",
+    "contact": "Deb Kroemer",
+    "location": "Euclid",
+    "gifts": [
+      "historical knowledge",
+      "community memory",
+      "neighborhood narrative",
+      "cultural continuity"
+    ],
+    "source_text": "Deb Kroemer is a resident with community history expertise, having documented neighborhood stories and transitions in Euclid over three decades. She is a living archive of the city's cultural memory."
+  },
+  {
+    "name": "Willis Brown",
+    "category": "Individuals",
+    "description": "A resident and longtime small business owner with deep knowledge of the local economy and mentoring experience with young entrepreneurs.",
+    "contact": "Willis Brown",
+    "location": "Euclid Avenue",
+    "gifts": [
+      "business expertise",
+      "economic knowledge",
+      "mentorship",
+      "entrepreneurship training"
+    ],
+    "source_text": "Willis Brown is a resident and longtime small business owner on Euclid Avenue. He has deep knowledge of the local economy, relationships with the Chamber of Commerce, and has mentored several young entrepreneurs in the city."
+  },
+  {
+    "name": "Andre Brice",
+    "category": "Individuals",
+    "description": "A resident who runs an informal job readiness program connecting unemployed residents with local employers.",
+    "contact": "Andre Brice",
+    "location": null,
+    "gifts": [
+      "job placement",
+      "employment readiness training",
+      "employer connections"
+    ],
+    "source_text": "Andre Brice runs an informal job readiness program out of his home, connecting unemployed residents with local employers. He has placed over 30 people in jobs in the last two years."
+  },
+  {
+    "name": "Cheryl Mays",
+    "category": "Individuals",
+    "description": "A resident and business owner who operates a catering business and regularly donates meals to community events.",
+    "contact": "Cheryl Mays",
+    "location": null,
+    "gifts": [
+      "food service",
+      "community donations",
+      "local food sourcing"
+    ],
+    "source_text": "Cheryl Mays is both a resident and business owner. She operates a catering business that sources food from local suppliers and regularly donates meals to community events."
+  },
+  {
+    "name": "Kappa Alpha Psi Fraternity - Euclid Chapter",
+    "category": "Associations",
+    "description": "An active fraternal organization with community service programming including scholarship funds and youth mentorship.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "youth mentorship",
+      "scholarship funding",
+      "community service",
+      "gathering capacity"
+    ],
+    "source_text": "Kappa Alpha Psi fraternity has a chapter in Euclid with active community service programming including scholarship funds and youth mentorship."
+  },
+  {
+    "name": "Kiwanis Club of Euclid",
+    "category": "Associations",
+    "description": "A long-established service organization with 30 years of organizing community projects and strong institutional connections.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "community service projects",
+      "fundraising capacity",
+      "institutional relationships",
+      "organized mobilization"
+    ],
+    "source_text": "Kiwanis Club of Euclid has been organizing community service projects and fundraisers for 30 years, with strong institutional connections to local schools and government."
+  },
+  {
+    "name": "Juneteenth Block Party Coalition",
+    "category": "Associations",
+    "description": "A coalition of Black-owned businesses and residents that has organized an annual celebration for 12 years.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "event organization",
+      "community gathering",
+      "business networking",
+      "coalition building"
+    ],
+    "source_text": "Euclid's annual Juneteenth block party, organized by a coalition of Black-owned businesses and residents, is a 12-year tradition that celebrates African American heritage and spotlights local entrepreneurs."
+  },
+  {
+    "name": "Pope's Hardware",
+    "category": "Institutions",
+    "description": "A family-owned business that donates tools and materials to neighborhood improvement projects.",
+    "contact": null,
+    "location": "Euclid Avenue",
+    "gifts": [
+      "tools and materials",
+      "community donations",
+      "neighborhood improvement support"
+    ],
+    "source_text": "Pope's Hardware on Euclid Avenue has been family-owned for three generations and donates tools and materials to neighborhood improvement projects."
+  },
+  {
+    "name": "Cheryl Mays' Catering Business",
+    "category": "Economic Assets",
+    "description": "A local catering business that sources from local suppliers and contributes food to community events.",
+    "contact": "Cheryl Mays",
+    "location": null,
+    "gifts": [
+      "local employment",
+      "local food sourcing",
+      "business revenue",
+      "community support"
+    ],
+    "source_text": "She operates a catering business that sources food from local suppliers and regularly donates meals to community events."
+  },
+  {
+    "name": "Willis Brown's Small Business",
+    "category": "Economic Assets",
+    "description": "A longtime small business on Euclid Avenue that provides local employment and economic knowledge.",
+    "contact": "Willis Brown",
+    "location": "Euclid Avenue",
+    "gifts": [
+      "local employment",
+      "business revenue",
+      "economic development",
+      "Chamber connections"
+    ],
+    "source_text": "Willis Brown is a resident and longtime small business owner on Euclid Avenue. He has deep knowledge of the local economy, relationships with the Chamber of Commerce, and has mentored several young entrepreneurs in the city."
+  },
+  {
+    "name": "Pope's Hardware - Family Business",
+    "category": "Economic Assets",
+    "description": "A three-generation family-owned business providing local employment and economic activity.",
+    "contact": null,
+    "location": "Euclid Avenue",
+    "gifts": [
+      "local employment",
+      "business continuity",
+      "family enterprise model"
+    ],
+    "source_text": "Pope's Hardware on Euclid Avenue has been family-owned for three generations and donates tools and materials to neighborhood improvement projects."
+  },
+  {
+    "name": "Juneteenth Celebration",
+    "category": "Cultural Assets",
+    "description": "A 12-year tradition celebrating African American heritage and community identity.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "cultural celebration",
+      "heritage preservation",
+      "community identity",
+      "historical recognition"
+    ],
+    "source_text": "Euclid's annual Juneteenth block party, organized by a coalition of Black-owned businesses and residents, is a 12-year tradition that celebrates African American heritage and spotlights local entrepreneurs."
+  },
+  {
+    "name": "Black-Owned Business Community",
+    "category": "Cultural Assets",
+    "description": "Local entrepreneurs and business owners who maintain cultural heritage and community identity through their enterprises.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "cultural representation",
+      "entrepreneurial role models",
+      "community heritage",
+      "local economic identity"
+    ],
+    "source_text": "Euclid's annual Juneteenth block party, organized by a coalition of Black-owned businesses and residents, is a 12-year tradition that celebrates African American heritage and spotlights local entrepreneurs."
+  },
+  {
+    "name": "Karla",
+    "category": "Individuals",
+    "description": "Long-term Euclid Public Library employee with 29 years of institutional knowledge, community relationships, and library programming expertise.",
+    "contact": "Karla",
+    "location": "Euclid",
+    "gifts": [
+      "institutional knowledge",
+      "community relationships",
+      "library programming experience",
+      "reference expertise",
+      "trusted presence with longtime residents"
+    ],
+    "source_text": "Karla has worked at the Euclid Public Library for 29 years and has deep institutional knowledge of community resources and a trusted presence with longtime residents. She brings reference expertise, community relationships, and library programming experience."
+  },
+  {
+    "name": "Mary Gay",
+    "category": "Individuals",
+    "description": "Licensed social worker with expertise in trauma-informed care, community facilitation, and connections to the Euclid development community.",
+    "contact": "Mary Gay",
+    "location": "Euclid",
+    "gifts": [
+      "trauma-informed care expertise",
+      "community facilitation",
+      "connections to development community",
+      "social work licensing"
+    ],
+    "source_text": "Mary Gay is a licensed social worker with expertise in trauma-informed care, community facilitation, and connection to the Euclid development community."
+  },
+  {
+    "name": "Michael",
+    "category": "Individuals",
+    "description": "Committed community member advocate working to address trauma and violence in Euclid.",
+    "contact": "Michael",
+    "location": "Euclid",
+    "gifts": [
+      "community advocacy",
+      "resident perspective"
+    ],
+    "source_text": "Michael is committed as a community member advocate."
+  },
+  {
+    "name": "Rachel",
+    "category": "Individuals",
+    "description": "Euclid resident with 4 years of community experience and participation in trauma-focused visioning.",
+    "contact": "Rachel",
+    "location": "Euclid",
+    "gifts": [
+      "resident perspective",
+      "community engagement"
+    ],
+    "source_text": "Rachel (Euclid resident 4 years)"
+  },
+  {
+    "name": "Jaylen",
+    "category": "Individuals",
+    "description": "Youth participant age 14 involved in community visioning and connected to CCLE.",
+    "contact": "Jaylen",
+    "location": "Euclid",
+    "gifts": [
+      "youth perspective",
+      "community engagement"
+    ],
+    "source_text": "Jaylen (youth, 14, CCLE)"
+  },
+  {
+    "name": "Bev",
+    "category": "Individuals",
+    "description": "Ally resident with community preference literacy (CPL) contributing to Euclid Hope Ambassador Program capacity discussions.",
+    "contact": "Bev",
+    "location": "Euclid",
+    "gifts": [
+      "community preference literacy",
+      "ambassador program capacity"
+    ],
+    "source_text": "Bev (ally resident, CPL)"
+  },
+  {
+    "name": "Euclid Public Library",
+    "category": "Institutions",
+    "description": "Formal municipal institution serving as a community resource hub and trusted gathering place with 29 years of continuous programming and community relationships.",
+    "contact": "Karla",
+    "location": "Euclid",
+    "gifts": [
+      "community programming",
+      "resource information",
+      "trusted gathering space",
+      "institutional stability"
+    ],
+    "source_text": "Karla has worked at the Euclid Public Library for 29 years and has deep institutional knowledge of community resources and a trusted presence with longtime residents."
+  },
+  {
+    "name": "Cleveland Peacemakers Alliance",
+    "category": "Institutions",
+    "description": "Multi-city organization providing conflict resolution training and violence interruption programming with demonstrated track record across Northeast Ohio.",
+    "contact": null,
+    "location": "Northeast Ohio",
+    "gifts": [
+      "conflict resolution training",
+      "violence interruption programming",
+      "expertise across multiple cities"
+    ],
+    "source_text": "Cleveland Peacemakers Alliance brings conflict resolution training and violence interruption programming with a track record across multiple Northeast Ohio cities."
+  },
+  {
+    "name": "Life Anew Behavioral Health",
+    "category": "Institutions",
+    "description": "Mental health service provider offering trauma-informed counseling and recovery services to community members.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "trauma-informed counseling",
+      "recovery services"
+    ],
+    "source_text": "Life Anew Behavioral Health provides trauma-informed counseling and recovery services."
+  },
+  {
+    "name": "Euclid Hospital Emergency Department",
+    "category": "Institutions",
+    "description": "First point of contact for residents in crisis with pilot community health worker follow-up program.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "crisis response",
+      "emergency services",
+      "community health worker follow-up",
+      "access to care"
+    ],
+    "source_text": "The Euclid Hospital Emergency Department serves as a first point of contact for many residents experiencing crisis and has begun piloting community health worker follow-up."
+  },
+  {
+    "name": "Moore Counseling and Mediation",
+    "category": "Institutions",
+    "description": "Mental health service provider offering culturally responsive mental health services to the community.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "culturally responsive mental health services"
+    ],
+    "source_text": "Moore Counseling and Mediation offers culturally responsive mental health services."
+  },
+  {
+    "name": "Village of Healing",
+    "category": "Institutions",
+    "description": "Community-based organization providing peer support services for trauma survivors.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "peer support for trauma survivors"
+    ],
+    "source_text": "Village of Healing is a community-based organization providing peer support for trauma survivors."
+  },
+  {
+    "name": "BEST Community Resource Center",
+    "category": "Institutions",
+    "description": "Resource center connecting residents to wraparound services and comprehensive support systems.",
+    "contact": null,
+    "location": null,
+    "gifts": [
+      "wraparound services connection",
+      "comprehensive support coordination"
+    ],
+    "source_text": "BEST Community Resource Center connects residents to wraparound services."
+  },
+  {
+    "name": "Neighbor Night",
+    "category": "Associations",
+    "description": "Community gathering and connection initiative that brings neighbors together.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "community connection",
+      "relationship building"
+    ],
+    "source_text": "Resources and assets named: beach clubs, Neighbor Night."
+  },
+  {
+    "name": "Beach clubs",
+    "category": "Associations",
+    "description": "Informal community groups and gathering spaces that foster resident connections and social cohesion.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "gathering space",
+      "community connection",
+      "informal association"
+    ],
+    "source_text": "Resources and assets named: beach clubs, Neighbor Night."
+  },
+  {
+    "name": "Euclid Healing Walk",
+    "category": "Associations",
+    "description": "Annual community-organized gathering that brings residents together for collective grieving and hope-building around violence prevention.",
+    "contact": null,
+    "location": "Euclid neighborhoods",
+    "gifts": [
+      "community gathering",
+      "collective capacity",
+      "trust building",
+      "coordination"
+    ],
+    "source_text": "Euclid's annual Healing Walk, a tradition started 8 years ago by community members who lost loved ones to violence, draws hundreds of residents each spring in a march through the city's neighborhoods as an act of communal grief and hope."
+  },
+  {
+    "name": "Euclid Healing Walk",
+    "category": "Cultural Assets",
+    "description": "Eight-year community tradition honoring those lost to violence through annual spring march, transmitting shared grief, resilience, and collective identity.",
+    "contact": null,
+    "location": "Euclid neighborhoods",
+    "gifts": [
+      "grief processing",
+      "shared identity",
+      "resilience",
+      "collective memory",
+      "community belonging"
+    ],
+    "source_text": "Euclid's annual Healing Walk, a tradition started 8 years ago by community members who lost loved ones to violence, draws hundreds of residents each spring in a march through the city's neighborhoods as an act of communal grief and hope."
+  },
+  {
+    "name": "Kathleen McDonnel",
+    "category": "Individuals",
+    "description": "A longtime youth advocate with deep relationships across school and rec center networks who brings facilitation skills, community trust, and connections to city leadership.",
+    "contact": "Kathleen McDonnel",
+    "location": "Euclid",
+    "gifts": [
+      "youth advocacy",
+      "facilitation skills",
+      "community trust",
+      "connections to city leadership",
+      "knowledge of school networks",
+      "knowledge of rec center networks"
+    ],
+    "source_text": "Kathleen McDonnel is a longtime youth advocate in Euclid with deep relationships across school and rec center networks. She brings facilitation skills, community trust, and connections to city leadership."
+  },
+  {
+    "name": "Sierra Stallworth",
+    "category": "Individuals",
+    "description": "A young resident and emerging community leader who brings lived experience as Euclid youth and has a network of peers.",
+    "contact": "Sierra Stallworth",
+    "location": "Euclid",
+    "gifts": [
+      "lived experience as Euclid youth",
+      "emerging community leadership",
+      "peer network",
+      "note-taking skills"
+    ],
+    "source_text": "Sierra Stallworth is a young resident and emerging community leader who brings lived experience as Euclid youth, note-taking skills, and a network of peers."
+  },
+  {
+    "name": "Damian Calvert",
+    "category": "Individuals",
+    "description": "A community member who has been organizing youth sports leagues informally and has deep knowledge of vulnerable youth and their families.",
+    "contact": "Damian Calvert",
+    "location": "Euclid",
+    "gifts": [
+      "youth sports organization",
+      "knowledge of at-risk youth",
+      "family relationships",
+      "community organizing"
+    ],
+    "source_text": "Damian Calvert has been organizing youth sports leagues informally in the neighborhood for three years. He knows which kids are falling through the cracks and has relationships with their families."
+  },
+  {
+    "name": "Euclid Boys League",
+    "category": "Institutions",
+    "description": "A formal organization that has been running youth athletics in the city for over 20 years, providing structured sports programming and a consistent gathering point.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "youth athletics programming",
+      "weekly gathering space",
+      "sports instruction",
+      "20+ years of youth engagement"
+    ],
+    "source_text": "The Euclid Boys League has been running youth athletics in the city for over 20 years and serves as a weekly gathering point for boys ages 8-16."
+  },
+  {
+    "name": "Elevated Dance Headquarters",
+    "category": "Institutions",
+    "description": "A formal organization providing after-school dance programming rooted in hip hop and African dance traditions.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "after-school programming",
+      "dance instruction",
+      "cultural arts education",
+      "youth gathering space"
+    ],
+    "source_text": "Elevated Dance Headquarters offers after-school dance programming rooted in hip hop and African dance traditions that have been part of Euclid's cultural fabric for over a decade."
+  },
+  {
+    "name": "Elevated Dance Headquarters",
+    "category": "Cultural Assets",
+    "description": "This organization transmits hip hop and African dance traditions that have been part of Euclid's cultural fabric for over a decade.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "hip hop culture",
+      "African dance traditions",
+      "cultural continuity",
+      "community identity"
+    ],
+    "source_text": "Elevated Dance Headquarters offers after-school dance programming rooted in hip hop and African dance traditions that have been part of Euclid's cultural fabric for over a decade."
+  },
+  {
+    "name": "The Upstage Players",
+    "category": "Institutions",
+    "description": "A formal theater group with a 15-year tradition of producing community theater with youth cast members.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "community theater productions",
+      "youth performance opportunities",
+      "arts education",
+      "community gathering space"
+    ],
+    "source_text": "The Upstage Players theater group has a 15-year tradition of producing community theater with youth cast members, drawing on Euclid's rich history of neighborhood storytelling."
+  },
+  {
+    "name": "The Upstage Players",
+    "category": "Cultural Assets",
+    "description": "This theater group draws on Euclid's rich history of neighborhood storytelling, transmitting local narratives and heritage through performance.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "storytelling traditions",
+      "neighborhood history",
+      "community narratives",
+      "cultural continuity"
+    ],
+    "source_text": "The Upstage Players theater group has a 15-year tradition of producing community theater with youth cast members, drawing on Euclid's rich history of neighborhood storytelling."
+  },
+  {
+    "name": "Front porch gatherings",
+    "category": "Associations",
+    "description": "An informal tradition where neighborhood elders gather to share community knowledge and stories, representing collective community capacity and intergenerational connection.",
+    "contact": "Parris",
+    "location": "Parris's neighborhood, Euclid",
+    "gifts": [
+      "intergenerational gathering",
+      "community coordination",
+      "elder leadership",
+      "neighborhood trust"
+    ],
+    "source_text": "Parris noted that there is an informal tradition in her neighborhood of elders hosting front porch gatherings every summer where older residents share stories about what Euclid used to be like, passing down neighborhood history to younger generations."
+  },
+  {
+    "name": "Front porch gatherings",
+    "category": "Cultural Assets",
+    "description": "An informal tradition of elders sharing stories about neighborhood history, transmitting local knowledge and cultural memory across generations.",
+    "contact": "Parris",
+    "location": "Parris's neighborhood, Euclid",
+    "gifts": [
+      "neighborhood history",
+      "oral traditions",
+      "cultural memory",
+      "sense of belonging",
+      "community identity"
+    ],
+    "source_text": "Parris noted that there is an informal tradition in her neighborhood of elders hosting front porch gatherings every summer where older residents share stories about what Euclid used to be like, passing down neighborhood history to younger generations."
+  },
+  {
+    "name": "Euclid HOPE Task Force - Youth Safety Group",
+    "category": "Associations",
+    "description": "An informal community group formed to address youth safety through visioning and collective action, representing community coordination and shared commitment.",
+    "contact": "Kathleen McDonnel (Facilitator), Sierra Stallworth (Note Taker)",
+    "location": "Euclid",
+    "gifts": [
+      "community organizing",
+      "collective visioning",
+      "youth advocacy coordination",
+      "cross-sector collaboration"
+    ],
+    "source_text": "Euclid HOPE Task Force - Visioning Session, May 17 2025 Group: Youth Safety"
+  }
+]
