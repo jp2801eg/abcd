@@ -38,12 +38,34 @@ def load_input_file(filename: str) -> str:
         return f.read()
 
 
+CHUNK_SIZE = 4000
+
+
+def split_into_chunks(text: str, chunk_size: int = CHUNK_SIZE) -> list[str]:
+    if len(text) <= chunk_size:
+        return [text]
+
+    chunks = []
+    remaining = text
+    while len(remaining) > chunk_size:
+        split_at = remaining.rfind("\n\n", 0, chunk_size)
+        if split_at == -1:
+            split_at = remaining.rfind("\n", 0, chunk_size)
+        if split_at == -1:
+            split_at = chunk_size
+        chunks.append(remaining[:split_at].strip())
+        remaining = remaining[split_at:].strip()
+    if remaining:
+        chunks.append(remaining)
+    return chunks
+
+
 def classify_assets(text: str) -> list:
     client = anthropic.Anthropic()
 
     response = client.messages.create(
         model=MODEL,
-        max_tokens=4000,
+        max_tokens=8192,
         system=[
             {
                 "type": "text",
@@ -102,9 +124,16 @@ def main():
 
     print(f"\nReading '{filename}'...")
     text = load_input_file(filename)
-    print(f"Loaded {len(text)} characters. Sending to Claude...\n")
+    print(f"Loaded {len(text)} characters.\n")
 
-    assets = classify_assets(text)
+    chunks = split_into_chunks(text)
+    if len(chunks) > 1:
+        print(f"Input is large — splitting into {len(chunks)} chunks...\n")
+    assets = []
+    for i, chunk in enumerate(chunks, 1):
+        if len(chunks) > 1:
+            print(f"  Classifying chunk {i}/{len(chunks)} ({len(chunk)} chars)...")
+        assets.extend(classify_assets(chunk))
 
     os.makedirs("outputs", exist_ok=True)
     output_path = os.path.join("outputs", "assets.json")

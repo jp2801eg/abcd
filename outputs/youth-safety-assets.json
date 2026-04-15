@@ -1,0 +1,159 @@
+[
+  {
+    "name": "Kathleen McDonnel",
+    "category": "Individuals",
+    "description": "A longtime youth advocate with deep relationships across school and rec center networks who brings facilitation skills, community trust, and connections to city leadership.",
+    "contact": "Kathleen McDonnel",
+    "location": "Euclid",
+    "gifts": [
+      "youth advocacy",
+      "facilitation skills",
+      "community trust",
+      "connections to city leadership",
+      "knowledge of school networks",
+      "knowledge of rec center networks"
+    ],
+    "source_text": "Kathleen McDonnel is a longtime youth advocate in Euclid with deep relationships across school and rec center networks. She brings facilitation skills, community trust, and connections to city leadership."
+  },
+  {
+    "name": "Sierra Stallworth",
+    "category": "Individuals",
+    "description": "A young resident and emerging community leader who brings lived experience as Euclid youth and has a network of peers.",
+    "contact": "Sierra Stallworth",
+    "location": "Euclid",
+    "gifts": [
+      "lived experience as Euclid youth",
+      "emerging community leadership",
+      "peer network",
+      "note-taking skills"
+    ],
+    "source_text": "Sierra Stallworth is a young resident and emerging community leader who brings lived experience as Euclid youth, note-taking skills, and a network of peers."
+  },
+  {
+    "name": "Damian Calvert",
+    "category": "Individuals",
+    "description": "A community member who has been organizing youth sports leagues informally and has deep knowledge of vulnerable youth and their families.",
+    "contact": "Damian Calvert",
+    "location": "Euclid",
+    "gifts": [
+      "youth sports organization",
+      "knowledge of at-risk youth",
+      "family relationships",
+      "community organizing"
+    ],
+    "source_text": "Damian Calvert has been organizing youth sports leagues informally in the neighborhood for three years. He knows which kids are falling through the cracks and has relationships with their families."
+  },
+  {
+    "name": "Euclid Boys League",
+    "category": "Institutions",
+    "description": "A formal organization that has been running youth athletics in the city for over 20 years, providing structured sports programming and a consistent gathering point.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "youth athletics programming",
+      "weekly gathering space",
+      "sports instruction",
+      "20+ years of youth engagement"
+    ],
+    "source_text": "The Euclid Boys League has been running youth athletics in the city for over 20 years and serves as a weekly gathering point for boys ages 8-16."
+  },
+  {
+    "name": "Elevated Dance Headquarters",
+    "category": "Institutions",
+    "description": "A formal organization providing after-school dance programming rooted in hip hop and African dance traditions.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "after-school programming",
+      "dance instruction",
+      "cultural arts education",
+      "youth gathering space"
+    ],
+    "source_text": "Elevated Dance Headquarters offers after-school dance programming rooted in hip hop and African dance traditions that have been part of Euclid's cultural fabric for over a decade."
+  },
+  {
+    "name": "Elevated Dance Headquarters",
+    "category": "Cultural Assets",
+    "description": "This organization transmits hip hop and African dance traditions that have been part of Euclid's cultural fabric for over a decade.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "hip hop culture",
+      "African dance traditions",
+      "cultural continuity",
+      "community identity"
+    ],
+    "source_text": "Elevated Dance Headquarters offers after-school dance programming rooted in hip hop and African dance traditions that have been part of Euclid's cultural fabric for over a decade."
+  },
+  {
+    "name": "The Upstage Players",
+    "category": "Institutions",
+    "description": "A formal theater group with a 15-year tradition of producing community theater with youth cast members.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "community theater productions",
+      "youth performance opportunities",
+      "arts education",
+      "community gathering space"
+    ],
+    "source_text": "The Upstage Players theater group has a 15-year tradition of producing community theater with youth cast members, drawing on Euclid's rich history of neighborhood storytelling."
+  },
+  {
+    "name": "The Upstage Players",
+    "category": "Cultural Assets",
+    "description": "This theater group draws on Euclid's rich history of neighborhood storytelling, transmitting local narratives and heritage through performance.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "storytelling traditions",
+      "neighborhood history",
+      "community narratives",
+      "cultural continuity"
+    ],
+    "source_text": "The Upstage Players theater group has a 15-year tradition of producing community theater with youth cast members, drawing on Euclid's rich history of neighborhood storytelling."
+  },
+  {
+    "name": "Front porch gatherings",
+    "category": "Associations",
+    "description": "An informal tradition where neighborhood elders gather to share community knowledge and stories, representing collective community capacity and intergenerational connection.",
+    "contact": "Parris",
+    "location": "Parris's neighborhood, Euclid",
+    "gifts": [
+      "intergenerational gathering",
+      "community coordination",
+      "elder leadership",
+      "neighborhood trust"
+    ],
+    "source_text": "Parris noted that there is an informal tradition in her neighborhood of elders hosting front porch gatherings every summer where older residents share stories about what Euclid used to be like, passing down neighborhood history to younger generations."
+  },
+  {
+    "name": "Front porch gatherings",
+    "category": "Cultural Assets",
+    "description": "An informal tradition of elders sharing stories about neighborhood history, transmitting local knowledge and cultural memory across generations.",
+    "contact": "Parris",
+    "location": "Parris's neighborhood, Euclid",
+    "gifts": [
+      "neighborhood history",
+      "oral traditions",
+      "cultural memory",
+      "sense of belonging",
+      "community identity"
+    ],
+    "source_text": "Parris noted that there is an informal tradition in her neighborhood of elders hosting front porch gatherings every summer where older residents share stories about what Euclid used to be like, passing down neighborhood history to younger generations."
+  },
+  {
+    "name": "Euclid HOPE Task Force - Youth Safety Group",
+    "category": "Associations",
+    "description": "An informal community group formed to address youth safety through visioning and collective action, representing community coordination and shared commitment.",
+    "contact": "Kathleen McDonnel (Facilitator), Sierra Stallworth (Note Taker)",
+    "location": "Euclid",
+    "gifts": [
+      "community organizing",
+      "collective visioning",
+      "youth advocacy coordination",
+      "cross-sector collaboration"
+    ],
+    "source_text": "Euclid HOPE Task Force - Visioning Session, May 17 2025 Group: Youth Safety"
+  }
+]

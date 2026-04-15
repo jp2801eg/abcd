@@ -1,0 +1,179 @@
+[
+  {
+    "name": "Willis Brown",
+    "category": "Individuals",
+    "description": "A resident and longtime small business owner with deep knowledge of the local economy and mentoring experience with young entrepreneurs.",
+    "contact": "Willis Brown",
+    "location": "Euclid Avenue",
+    "gifts": [
+      "business expertise",
+      "economic knowledge",
+      "mentorship",
+      "entrepreneurship training"
+    ],
+    "source_text": "Willis Brown is a resident and longtime small business owner on Euclid Avenue. He has deep knowledge of the local economy, relationships with the Chamber of Commerce, and has mentored several young entrepreneurs in the city."
+  },
+  {
+    "name": "Andre Brice",
+    "category": "Individuals",
+    "description": "A resident who runs an informal job readiness program connecting unemployed residents with local employers.",
+    "contact": "Andre Brice",
+    "location": null,
+    "gifts": [
+      "job placement",
+      "employment readiness training",
+      "employer connections"
+    ],
+    "source_text": "Andre Brice runs an informal job readiness program out of his home, connecting unemployed residents with local employers. He has placed over 30 people in jobs in the last two years."
+  },
+  {
+    "name": "Cheryl Mays",
+    "category": "Individuals",
+    "description": "A resident and business owner who operates a catering business and regularly donates meals to community events.",
+    "contact": "Cheryl Mays",
+    "location": null,
+    "gifts": [
+      "food service",
+      "community donations",
+      "local food sourcing"
+    ],
+    "source_text": "Cheryl Mays is both a resident and business owner. She operates a catering business that sources food from local suppliers and regularly donates meals to community events."
+  },
+  {
+    "name": "Kappa Alpha Psi Fraternity - Euclid Chapter",
+    "category": "Associations",
+    "description": "An active fraternal organization with community service programming including scholarship funds and youth mentorship.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "youth mentorship",
+      "scholarship funding",
+      "community service",
+      "gathering capacity"
+    ],
+    "source_text": "Kappa Alpha Psi fraternity has a chapter in Euclid with active community service programming including scholarship funds and youth mentorship."
+  },
+  {
+    "name": "Kiwanis Club of Euclid",
+    "category": "Associations",
+    "description": "A long-established service organization with 30 years of organizing community projects and strong institutional connections.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "community service projects",
+      "fundraising capacity",
+      "institutional relationships",
+      "organized mobilization"
+    ],
+    "source_text": "Kiwanis Club of Euclid has been organizing community service projects and fundraisers for 30 years, with strong institutional connections to local schools and government."
+  },
+  {
+    "name": "Juneteenth Block Party Coalition",
+    "category": "Associations",
+    "description": "A coalition of Black-owned businesses and residents that has organized an annual celebration for 12 years.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "event organization",
+      "community gathering",
+      "business networking",
+      "coalition building"
+    ],
+    "source_text": "Euclid's annual Juneteenth block party, organized by a coalition of Black-owned businesses and residents, is a 12-year tradition that celebrates African American heritage and spotlights local entrepreneurs."
+  },
+  {
+    "name": "Euclid Hunger Center",
+    "category": "Institutions",
+    "description": "A formal organization providing food assistance and nutrition resources to families across the city.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "food assistance",
+      "nutrition education",
+      "social services"
+    ],
+    "source_text": "The Euclid Hunger Center provides food assistance and nutrition resources to families across the city."
+  },
+  {
+    "name": "Pope's Hardware",
+    "category": "Institutions",
+    "description": "A family-owned business that donates tools and materials to neighborhood improvement projects.",
+    "contact": null,
+    "location": "Euclid Avenue",
+    "gifts": [
+      "tools and materials",
+      "community donations",
+      "neighborhood improvement support"
+    ],
+    "source_text": "Pope's Hardware on Euclid Avenue has been family-owned for three generations and donates tools and materials to neighborhood improvement projects."
+  },
+  {
+    "name": "Cheryl Mays' Catering Business",
+    "category": "Economic Assets",
+    "description": "A local catering business that sources from local suppliers and contributes food to community events.",
+    "contact": "Cheryl Mays",
+    "location": null,
+    "gifts": [
+      "local employment",
+      "local food sourcing",
+      "business revenue",
+      "community support"
+    ],
+    "source_text": "She operates a catering business that sources food from local suppliers and regularly donates meals to community events."
+  },
+  {
+    "name": "Willis Brown's Small Business",
+    "category": "Economic Assets",
+    "description": "A longtime small business on Euclid Avenue that provides local employment and economic knowledge.",
+    "contact": "Willis Brown",
+    "location": "Euclid Avenue",
+    "gifts": [
+      "local employment",
+      "business revenue",
+      "economic development",
+      "Chamber connections"
+    ],
+    "source_text": "Willis Brown is a resident and longtime small business owner on Euclid Avenue. He has deep knowledge of the local economy, relationships with the Chamber of Commerce, and has mentored several young entrepreneurs in the city."
+  },
+  {
+    "name": "Pope's Hardware - Family Business",
+    "category": "Economic Assets",
+    "description": "A three-generation family-owned business providing local employment and economic activity.",
+    "contact": null,
+    "location": "Euclid Avenue",
+    "gifts": [
+      "local employment",
+      "business continuity",
+      "family enterprise model"
+    ],
+    "source_text": "Pope's Hardware on Euclid Avenue has been family-owned for three generations and donates tools and materials to neighborhood improvement projects."
+  },
+  {
+    "name": "Juneteenth Celebration",
+    "category": "Cultural Assets",
+    "description": "A 12-year tradition celebrating African American heritage and community identity.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "cultural celebration",
+      "heritage preservation",
+      "community identity",
+      "historical recognition"
+    ],
+    "source_text": "Euclid's annual Juneteenth block party, organized by a coalition of Black-owned businesses and residents, is a 12-year tradition that celebrates African American heritage and spotlights local entrepreneurs."
+  },
+  {
+    "name": "Black-Owned Business Community",
+    "category": "Cultural Assets",
+    "description": "Local entrepreneurs and business owners who maintain cultural heritage and community identity through their enterprises.",
+    "contact": null,
+    "location": "Euclid",
+    "gifts": [
+      "cultural representation",
+      "entrepreneurial role models",
+      "community heritage",
+      "local economic identity"
+    ],
+    "source_text": "Euclid's annual Juneteenth block party, organized by a coalition of Black-owned businesses and residents, is a 12-year tradition that celebrates African American heritage and spotlights local entrepreneurs."
+  }
+]
