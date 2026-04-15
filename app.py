@@ -8,6 +8,15 @@ from classify import classify_assets, consolidate_assets, split_into_chunks
 MAX_RETRIES = 3
 RETRY_DELAY = 5  # seconds
 
+CATEGORIES = [
+    "Individuals",
+    "Associations",
+    "Institutions",
+    "Built/Natural Environment",
+    "Economic Assets",
+    "Cultural Assets",
+]
+
 
 def classify_with_retries(chunk: str, chunk_label: str, status) -> list:
     for attempt in range(1, MAX_RETRIES + 1):
@@ -24,6 +33,7 @@ def classify_with_retries(chunk: str, chunk_label: str, status) -> list:
                     f"Failed to process {chunk_label} after {MAX_RETRIES} attempts. "
                     f"The API may be overloaded. Please try again in a moment."
                 ) from e
+
 
 ACCESS_CODE = "abcd2025"
 
@@ -59,7 +69,164 @@ if not st.session_state.authenticated:
             st.error("Incorrect access code. Please try again.")
     st.stop()
 
-# ── Main UI (shown only after authentication) ─────────────────────────────────
+# ── Review / editing interface ────────────────────────────────────────────────
+if st.session_state.get("review_mode"):
+    assets = st.session_state.assets
+    files_processed = st.session_state.get("files_processed", 1)
+    file_word = "file" if files_processed == 1 else "files"
+
+    col_title, col_action = st.columns([3, 1])
+    with col_title:
+        st.subheader(f"Review Your Assets ({len(assets)} found)")
+        st.caption(
+            "Edit any details that need correcting, and delete assets that don't belong. "
+            "When you're satisfied, click Generate Final Map."
+        )
+    with col_action:
+        if st.button("← Start Over", help="Clear results and upload new notes"):
+            # Remove widget keys for all current assets to avoid stale values on next run
+            for asset in assets:
+                aid = asset["_id"]
+                for prefix in ("name_", "category_", "description_", "contact_", "location_"):
+                    st.session_state.pop(f"{prefix}{aid}", None)
+            st.session_state.pop("review_mode", None)
+            st.session_state.pop("assets", None)
+            st.session_state.pop("files_processed", None)
+            st.rerun()
+
+    st.divider()
+
+    # Sort by canonical category order then alphabetically by live name within each group.
+    # Use live session state values so the order reflects any edits made this session.
+    def sort_key(a):
+        aid = a["_id"]
+        live_cat = st.session_state.get(f"category_{aid}", a.get("category", ""))
+        live_name = st.session_state.get(f"name_{aid}", a.get("name", ""))
+        cat_order = CATEGORIES.index(live_cat) if live_cat in CATEGORIES else len(CATEGORIES)
+        return (cat_order, live_name.lower())
+
+    sorted_assets = sorted(assets, key=sort_key)
+
+    to_delete = None  # Collect deletion outside the loop to avoid mutating mid-iteration
+    any_category_changed = False
+    current_group = None
+
+    for asset in sorted_assets:
+        aid = asset["_id"]
+        live_name = st.session_state.get(f"name_{aid}", asset.get("name", "Unnamed asset"))
+        live_category = st.session_state.get(f"category_{aid}", asset.get("category", ""))
+
+        if live_category != asset.get("category"):
+            any_category_changed = True
+
+        # Emit a category subheader whenever the group changes
+        if live_category != current_group:
+            if current_group is not None:
+                st.write("")  # breathing room between groups
+            st.subheader(live_category)
+            current_group = live_category
+
+        with st.expander(live_name, expanded=False):
+            col_left, col_right = st.columns(2)
+
+            with col_left:
+                st.text_input(
+                    "Name",
+                    value=asset.get("name", ""),
+                    key=f"name_{aid}",
+                )
+                current_category = asset.get("category", CATEGORIES[0])
+                cat_index = CATEGORIES.index(current_category) if current_category in CATEGORIES else 0
+                st.selectbox(
+                    "Category",
+                    CATEGORIES,
+                    index=cat_index,
+                    key=f"category_{aid}",
+                )
+                st.text_input(
+                    "Contact",
+                    value=asset.get("contact") or "",
+                    key=f"contact_{aid}",
+                    help="Name or role of a person to reach about this asset",
+                )
+
+            with col_right:
+                st.text_area(
+                    "Description",
+                    value=asset.get("description", ""),
+                    key=f"description_{aid}",
+                    height=108,
+                )
+                st.text_input(
+                    "Location",
+                    value=asset.get("location") or "",
+                    key=f"location_{aid}",
+                    help="Physical location, if known",
+                )
+
+            gifts = asset.get("gifts") or []
+            if gifts:
+                st.markdown("**What this asset contributes**")
+                for gift in gifts:
+                    st.markdown(f"- {gift}")
+
+            source = asset.get("source_text", "")
+            if source:
+                st.caption(f"From the notes: _{source}_")
+
+            if st.button("Delete this asset", key=f"delete_{aid}", type="secondary"):
+                to_delete = asset
+
+    if to_delete is not None:
+        st.session_state.assets = [a for a in assets if a["_id"] != to_delete["_id"]]
+        st.rerun()
+
+    st.divider()
+
+    if st.button("Generate Final Map", type="primary"):
+        final_assets = []
+        for asset in assets:
+            aid = asset["_id"]
+            contact_val = st.session_state.get(f"contact_{aid}", asset.get("contact") or "").strip()
+            location_val = st.session_state.get(f"location_{aid}", asset.get("location") or "").strip()
+            final_assets.append({
+                "name": st.session_state.get(f"name_{aid}", asset.get("name", "")),
+                "category": st.session_state.get(f"category_{aid}", asset.get("category", "")),
+                "description": st.session_state.get(f"description_{aid}", asset.get("description", "")),
+                "contact": contact_val or None,
+                "location": location_val or None,
+                "gifts": asset.get("gifts"),
+                "source_text": asset.get("source_text"),
+            })
+
+        template_path = os.path.join(os.path.dirname(__file__), "map_template.html")
+        with open(template_path, "r", encoding="utf-8") as f:
+            template = f.read()
+
+        assets_json = json.dumps(final_assets, ensure_ascii=False)
+        html_output = template.replace("__ASSETS_DATA__", assets_json)
+
+        st.success(
+            f"Map ready! Processed **{files_processed} {file_word}** and mapped "
+            f"**{len(final_assets)} assets** after your review."
+        )
+        st.download_button(
+            label="Download Asset Map (HTML)",
+            data=html_output.encode("utf-8"),
+            file_name="community-asset-map.html",
+            mime="text/html",
+        )
+        st.caption("Open the downloaded file in any web browser to explore the map.")
+
+    if any_category_changed:
+        st.caption(
+            "Note: if you changed any asset categories, click Generate Final Map "
+            "to see the updated groupings."
+        )
+
+    st.stop()
+
+# ── Upload interface (shown when not in review mode) ──────────────────────────
 uploaded_files = st.file_uploader(
     "Upload your meeting notes (.txt or .md)",
     type=["txt", "md"],
@@ -90,8 +257,7 @@ else:
 if inputs:
     if st.button("Generate Map", type="primary"):
         # Count total chunks across all inputs for the overall progress bar.
-        all_chunks = [(label, chunk) for label, text in inputs for chunk in split_into_chunks(text)]
-        total_chunks = len(all_chunks)
+        total_chunks = sum(len(split_into_chunks(text)) for _, text in inputs)
 
         progress_bar = st.progress(0, text="Starting…")
         status = st.empty()
@@ -126,29 +292,16 @@ if inputs:
         status.write("Consolidating and deduplicating assets…")
         all_assets = consolidate_assets(all_assets)
 
-        status.write("Building map…")
-
-        # Build the HTML map in memory (avoid touching outputs/ on disk)
-        template_path = os.path.join(os.path.dirname(__file__), "map_template.html")
-        with open(template_path, "r", encoding="utf-8") as f:
-            template = f.read()
-
-        assets_json = json.dumps(all_assets, ensure_ascii=False)
-        html_output = template.replace("__ASSETS_DATA__", assets_json)
-
         progress_bar.empty()
         status.empty()
 
-        files_processed = len(inputs)
-        file_word = "file" if files_processed == 1 else "files"
-        st.success(
-            f"Done! Processed **{files_processed} {file_word}** and found "
-            f"**{len(all_assets)} assets** across your community notes."
-        )
-        st.download_button(
-            label="Download Asset Map (HTML)",
-            data=html_output.encode("utf-8"),
-            file_name="community-asset-map.html",
-            mime="text/html",
-        )
-        st.caption("Open the downloaded file in any web browser to explore the map.")
+        # Assign stable IDs so widget keys don't collide across editing sessions
+        id_base = st.session_state.get("asset_id_counter", 0)
+        for i, asset in enumerate(all_assets):
+            asset["_id"] = id_base + i
+        st.session_state.asset_id_counter = id_base + len(all_assets)
+
+        st.session_state.assets = all_assets
+        st.session_state.files_processed = len(inputs)
+        st.session_state.review_mode = True
+        st.rerun()
