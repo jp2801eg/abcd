@@ -1,6 +1,14 @@
 # ABCD Community Asset Map
 
-> **This is a working prototype.** Running it currently requires technical setup (Python, a terminal, and an API key). A facilitator-friendly version that requires no installation or technical knowledge is planned for the future. If you are not comfortable with the setup steps below, hold on for that version — or ask a technically inclined colleague to run it on your behalf.
+## Try it in your browser — no installation needed
+
+A live, browser-based version of this tool is available. You paste in your notes, and it produces the same structured asset map — no Python, no API key, no terminal. Just open it and go.
+
+Access is currently by request. If you are an ABCD practitioner and would like to try it, you are welcome to [open a GitHub issue](../../issues) or contact me directly and I will get you set up.
+
+---
+
+> **Using this repo instead?** Running the tool from source requires technical setup (Python, a terminal, and an API key). If that is not your preference, the browser version above is the easier path. Or ask a technically inclined colleague to run it on your behalf.
 
 ---
 
