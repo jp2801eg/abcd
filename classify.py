@@ -16,6 +16,10 @@ Classify every asset you find into one of these 6 ABCD categories:
 
 An asset may appear in more than one category if it represents different dimensions of the same thing. For example, a Día de los Muertos celebration organized by a neighborhood family is both an Association (an informal group that gathers) and a Cultural Asset (the tradition and heritage it carries). When this applies, create a separate entry for each category.
 
+Important classification rules:
+- If a person is primarily known through their association or organization (e.g. "Maria runs the food pantry"), capture the association as the main asset and list the person in the contact field — do not create a separate Individual entry for them unless they have distinct personal gifts beyond their role.
+- Do not create duplicate entries for the same real-world asset even if it is mentioned multiple times in the notes. If an asset recurs, produce one entry that synthesizes all mentions.
+
 For every asset entry, populate these fields:
 - name: short identifying name for the asset
 - category: one of the 6 category names above
@@ -26,6 +30,18 @@ For every asset entry, populate these fields:
 - source_text: the exact phrase or sentence from the input that identified this asset
 
 Return ONLY a valid JSON array of asset objects. No explanation, no markdown, no code fences — just the raw JSON array."""
+
+CONSOLIDATION_PROMPT = """You are an expert in Asset-Based Community Development (ABCD).
+You have been given a list of community assets extracted from meeting notes, possibly across multiple sessions or documents. Due to chunked processing, the list may contain duplicates or fragments. Your job is to clean it up.
+
+Apply these rules:
+1. Merge duplicate assets that refer to the same real-world person, place, or group — even if the names are slightly different (e.g. "St. Mary's Church" and "St Marys Church").
+2. When a person and their association appear as separate entries, consolidate them: keep the association as the main asset and move the person's name to the contact field. Fold any unique gifts from the Individual entry into the association's gifts list.
+3. Remove near-duplicates where the same asset appears with slightly different descriptions or source texts. Keep the richer, more complete entry.
+4. Do not invent new assets or change the meaning of existing ones. Only consolidate and deduplicate.
+5. Preserve multi-category entries (e.g. an asset that is both an Association and a Cultural Asset) as separate entries — only merge entries that represent the same asset in the same category.
+
+Return ONLY a valid JSON array of the cleaned asset objects using the same fields as the input (name, category, description, contact, location, gifts, source_text). No explanation, no markdown, no code fences — just the raw JSON array."""
 
 MODEL = "claude-haiku-4-5-20251001"
 
@@ -100,6 +116,46 @@ def classify_assets(text: str) -> list:
             with open(os.path.join("outputs", "raw_response.txt"), "w", encoding="utf-8") as f:
                 f.write(text)
         raise SystemExit(1)
+
+
+def consolidate_assets(assets: list) -> list:
+    """Send the full combined asset list back to Claude to merge duplicates and fragments."""
+    if not assets:
+        return assets
+
+    client = anthropic.Anthropic()
+    assets_json = json.dumps(assets, ensure_ascii=False, indent=2)
+
+    response = client.messages.create(
+        model=MODEL,
+        max_tokens=8192,
+        system=[
+            {
+                "type": "text",
+                "text": CONSOLIDATION_PROMPT,
+                "cache_control": {"type": "ephemeral"},
+            }
+        ],
+        messages=[
+            {
+                "role": "user",
+                "content": f"Please consolidate and deduplicate the following asset list:\n\n{assets_json}",
+            }
+        ],
+    )
+
+    raw = response.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("\n", 1)[1]
+    if raw.endswith("```"):
+        raw = raw.rsplit("```", 1)[0]
+    raw = raw.strip()
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        # If consolidation fails, return the original list rather than crashing.
+        print("Warning: consolidation response could not be parsed — returning original list.")
+        return assets
 
 
 def generate_map(assets: list) -> None:

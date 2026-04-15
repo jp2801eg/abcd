@@ -3,7 +3,7 @@ import os
 import time
 import streamlit as st
 
-from classify import classify_assets, split_into_chunks
+from classify import classify_assets, consolidate_assets, split_into_chunks
 
 MAX_RETRIES = 3
 RETRY_DELAY = 5  # seconds
@@ -38,6 +38,11 @@ st.write(
     "visual map. Nothing is stored. Everything stays with you."
 )
 
+st.info(
+    "AI classification is a starting point, not a final product. "
+    "Always review assets with your community before sharing or acting on them."
+)
+
 st.divider()
 
 # ── Access code gate ──────────────────────────────────────────────────────────
@@ -55,9 +60,10 @@ if not st.session_state.authenticated:
     st.stop()
 
 # ── Main UI (shown only after authentication) ─────────────────────────────────
-uploaded_file = st.file_uploader(
+uploaded_files = st.file_uploader(
     "Upload your meeting notes (.txt or .md)",
     type=["txt", "md"],
+    accept_multiple_files=True,
 )
 
 st.divider()
@@ -68,42 +74,58 @@ pasted_text = st.text_area(
     height=200,
 )
 
-# Determine input: file takes priority over pasted text
-if uploaded_file is not None:
-    input_text = uploaded_file.read().decode("utf-8")
-    st.success(f"File loaded: **{uploaded_file.name}**")
+# Determine input: files take priority over pasted text
+# Each entry in `inputs` is a (label, text) tuple.
+if uploaded_files:
+    inputs = [(f.name, f.read().decode("utf-8")) for f in uploaded_files]
+    file_names = ", ".join(f"**{name}**" for name, _ in inputs)
+    st.success(
+        f"{'File' if len(inputs) == 1 else f'{len(inputs)} files'} loaded: {file_names}"
+    )
 elif pasted_text.strip():
-    input_text = pasted_text.strip()
+    inputs = [("pasted text", pasted_text.strip())]
 else:
-    input_text = None
+    inputs = []
 
-if input_text is not None:
+if inputs:
     if st.button("Generate Map", type="primary"):
-        text = input_text
-        chunks = split_into_chunks(text)
+        # Count total chunks across all inputs for the overall progress bar.
+        all_chunks = [(label, chunk) for label, text in inputs for chunk in split_into_chunks(text)]
+        total_chunks = len(all_chunks)
 
         progress_bar = st.progress(0, text="Starting…")
         status = st.empty()
 
         all_assets = []
+        chunks_done = 0
         try:
-            for i, chunk in enumerate(chunks):
-                label = (
-                    f"Analyzing chunk {i + 1} of {len(chunks)}…"
-                    if len(chunks) > 1
-                    else "Analyzing your notes…"
-                )
-                status.write(label)
-                progress_bar.progress(i / len(chunks), text=label)
+            for label, text in inputs:
+                file_chunks = split_into_chunks(text)
+                for i, chunk in enumerate(file_chunks):
+                    if len(inputs) > 1 and len(file_chunks) > 1:
+                        progress_label = f"**{label}** — chunk {i + 1} of {len(file_chunks)}…"
+                    elif len(inputs) > 1:
+                        progress_label = f"Analyzing **{label}**…"
+                    elif len(file_chunks) > 1:
+                        progress_label = f"Analyzing chunk {i + 1} of {len(file_chunks)}…"
+                    else:
+                        progress_label = "Analyzing your notes…"
 
-                all_assets.extend(classify_with_retries(chunk, label, status))
+                    status.write(progress_label)
+                    progress_bar.progress(chunks_done / total_chunks, text=progress_label)
+
+                    all_assets.extend(classify_with_retries(chunk, progress_label, status))
+                    chunks_done += 1
         except RuntimeError as e:
             progress_bar.empty()
             status.empty()
             st.error(str(e))
             st.stop()
 
-        progress_bar.progress(1.0, text="Building map…")
+        progress_bar.progress(1.0, text="Consolidating and deduplicating assets…")
+        status.write("Consolidating and deduplicating assets…")
+        all_assets = consolidate_assets(all_assets)
+
         status.write("Building map…")
 
         # Build the HTML map in memory (avoid touching outputs/ on disk)
@@ -117,8 +139,11 @@ if input_text is not None:
         progress_bar.empty()
         status.empty()
 
+        files_processed = len(inputs)
+        file_word = "file" if files_processed == 1 else "files"
         st.success(
-            f"Done! Found **{len(all_assets)} assets** in your community notes."
+            f"Done! Processed **{files_processed} {file_word}** and found "
+            f"**{len(all_assets)} assets** across your community notes."
         )
         st.download_button(
             label="Download Asset Map (HTML)",
