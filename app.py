@@ -18,6 +18,54 @@ CATEGORIES = [
 ]
 
 
+def _build_kumu_json(assets: list) -> bytes:
+    """Return a UTF-8 encoded Kumu blueprint JSON string."""
+    elements = []
+    for a in assets:
+        elements.append({
+            "label":       a.get("name") or "",
+            "type":        a.get("category") or "",
+            "description": a.get("description") or "",
+            "tags":        list(a.get("gifts") or []),
+            "Contact":     a.get("contact") or "",
+            "Location":    a.get("location") or "",
+            "Source":      a.get("source_text") or "",
+        })
+
+    connections = []
+    seen: set = set()
+
+    def _add_connection(label_a, label_b, conn_type):
+        key = (min(label_a, label_b), max(label_a, label_b))
+        if key not in seen:
+            seen.add(key)
+            connections.append({"from": label_a, "to": label_b, "type": conn_type})
+
+    by_location: dict[str, list] = {}
+    by_contact: dict[str, list] = {}
+
+    for a in assets:
+        loc = (a.get("location") or "").strip()
+        if loc:
+            by_location.setdefault(loc.lower(), []).append(a.get("name") or "")
+        con = (a.get("contact") or "").strip()
+        if con:
+            by_contact.setdefault(con.lower(), []).append(a.get("name") or "")
+
+    for labels in by_location.values():
+        for i in range(len(labels)):
+            for j in range(i + 1, len(labels)):
+                _add_connection(labels[i], labels[j], "shared location")
+
+    for labels in by_contact.values():
+        for i in range(len(labels)):
+            for j in range(i + 1, len(labels)):
+                _add_connection(labels[i], labels[j], "shared contact")
+
+    blueprint = {"elements": elements, "connections": connections}
+    return json.dumps(blueprint, ensure_ascii=False, indent=2).encode("utf-8")
+
+
 def classify_with_retries(chunk: str, chunk_label: str, status) -> list:
     for attempt in range(1, MAX_RETRIES + 1):
         try:
@@ -216,7 +264,20 @@ if st.session_state.get("review_mode"):
             file_name="community-asset-map.html",
             mime="text/html",
         )
-        st.caption("Open the downloaded file in any web browser to explore the map.")
+        st.caption(
+            "Opens in any browser. Visual and interactive right away — but changes won't save."
+        )
+
+        st.download_button(
+            label="Download for Kumu (.json)",
+            data=_build_kumu_json(final_assets),
+            file_name="community-asset-map-kumu.json",
+            mime="application/json",
+        )
+        st.caption(
+            "For a persistent, collaborative map. Requires a free Kumu account at kumu.io"
+            " — import the file to keep your map editable over time."
+        )
 
     if any_category_changed:
         st.caption(

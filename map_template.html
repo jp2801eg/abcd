@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Community Asset Map</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -16,19 +17,23 @@
 
   /* ── Header ── */
   header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 24px;
     background: #fff;
     border-bottom: 2px solid #e8e4df;
     position: sticky;
     top: 0;
     z-index: 100;
+    padding: 12px 24px 10px;
+  }
+
+  .header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
 
   header h1 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #1a1a1a;
     letter-spacing: -0.02em;
@@ -41,21 +46,75 @@
     margin-left: 8px;
   }
 
+  .header-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  #search-input {
+    padding: 5px 14px;
+    border-radius: 18px;
+    border: 1.5px solid #d5d0ca;
+    background: #faf8f4;
+    font-size: 0.81rem;
+    width: 230px;
+    outline: none;
+    transition: border-color 0.15s, background 0.15s;
+    font-family: inherit;
+    color: #2d2d2d;
+  }
+
+  #search-input:focus {
+    border-color: #aaa;
+    background: #fff;
+  }
+
+  #search-input::placeholder { color: #bbb; }
+
+  #category-filters {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .cat-btn {
+    padding: 4px 11px;
+    border-radius: 14px;
+    border: 2px solid transparent;
+    font-size: 0.72rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s, transform 0.1s;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+
+  .cat-btn.active { color: #fff; }
+
+  .cat-btn.inactive {
+    background: #fff !important;
+    color: #999 !important;
+    border-color: #d5d0ca !important;
+  }
+
+  .cat-btn:hover { transform: scale(1.05); }
+
   #toggle-btn {
-    padding: 8px 18px;
-    border-radius: 20px;
+    padding: 6px 16px;
+    border-radius: 18px;
     border: 2px solid #2d2d2d;
     background: #fff;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
   }
 
-  #toggle-btn:hover {
-    background: #2d2d2d;
-    color: #fff;
-  }
+  #toggle-btn:hover { background: #2d2d2d; color: #fff; }
 
   /* ── Error ── */
   #error-msg {
@@ -201,7 +260,6 @@
   #network-view {
     display: none;
     width: 100%;
-    height: calc(100vh - 62px);
     position: relative;
     overflow: hidden;
     background: #faf8f4;
@@ -209,63 +267,148 @@
 
   #network-svg {
     width: 100%;
-    height: 100%;
+    display: block;
+    cursor: grab;
   }
 
+  #network-svg:active { cursor: grabbing; }
+
   .net-link {
-    stroke: #d0ccc6;
+    stroke: #cdc9c2;
     stroke-width: 1.5;
+    fill: none;
   }
 
   .net-node circle {
     stroke: #fff;
     stroke-width: 2.5;
-    cursor: grab;
+    cursor: pointer;
+    transition: filter 0.15s;
   }
 
-  .net-node circle:active { cursor: grabbing; }
+  .net-node:hover circle { filter: brightness(1.12); }
 
   .net-node text {
-    font-size: 10px;
-    fill: #1a1a1a;
+    font-size: 9px;
+    fill: #555;
     text-anchor: middle;
     pointer-events: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-weight: 600;
   }
 
-  /* ── Tooltip ── */
-  #tooltip {
-    position: fixed;
-    background: #fff;
-    border: 1px solid #e0dbd5;
-    border-radius: 8px;
-    padding: 10px 14px;
-    font-size: 0.78rem;
-    max-width: 240px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  .net-hint {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.71rem;
+    color: #b0aba5;
     pointer-events: none;
-    display: none;
-    z-index: 200;
-    line-height: 1.5;
+    background: rgba(255,255,255,0.82);
+    padding: 4px 13px;
+    border-radius: 10px;
+    white-space: nowrap;
   }
 
-  #tooltip .tt-name {
+  /* ── Details panel ── */
+  #details-panel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100vh;
+    background: #fff;
+    border-left: 2px solid #e8e4df;
+    padding: 22px 22px 30px;
+    z-index: 300;
+    overflow-y: auto;
+    transition: right 0.24s ease;
+    box-shadow: -4px 0 24px rgba(0,0,0,0.08);
+  }
+
+  #details-panel.open { right: 0; }
+
+  #details-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #f5f3ef;
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+    line-height: 1;
+  }
+
+  #details-close:hover { background: #e8e4df; color: #333; }
+
+  .det-name {
+    font-size: 1.02rem;
     font-weight: 700;
-    font-size: 0.85rem;
-    margin-bottom: 2px;
     color: #1a1a1a;
+    margin-bottom: 7px;
+    margin-right: 36px;
+    line-height: 1.35;
   }
 
-  #tooltip .tt-cat {
-    font-size: 0.7rem;
-    font-weight: 600;
+  .det-category {
+    display: inline-block;
+    font-size: 0.69rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 5px;
+    letter-spacing: 0.07em;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-bottom: 14px;
   }
 
-  #tooltip .tt-desc { color: #555; }
+  .det-gifts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 13px;
+  }
+
+  .det-desc {
+    font-size: 0.82rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .det-field {
+    font-size: 0.79rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .det-field strong {
+    color: #888;
+    font-weight: 600;
+  }
+
+  .det-source {
+    font-size: 0.74rem;
+    color: #999;
+    font-style: italic;
+    background: #f5f3ef;
+    padding: 8px 11px;
+    border-radius: 6px;
+    line-height: 1.55;
+    margin-top: 8px;
+  }
+
+  .det-source::before { content: '\201C'; }
+  .det-source::after  { content: '\201D'; }
 
   /* ── Legend ── */
   #legend {
@@ -302,8 +445,14 @@
 <body>
 
 <header>
-  <h1>Community Asset Map <span id="asset-count"></span></h1>
-  <button id="toggle-btn">Switch to Network View</button>
+  <div class="header-row">
+    <h1>Community Asset Map <span id="asset-count"></span></h1>
+    <button id="toggle-btn">Network View</button>
+  </div>
+  <div class="header-controls">
+    <input type="search" id="search-input" placeholder="Search by name, description, or gifts…" autocomplete="off">
+    <div id="category-filters"></div>
+  </div>
 </header>
 
 <div id="zone-view"></div>
@@ -311,9 +460,13 @@
 <div id="network-view">
   <svg id="network-svg"></svg>
   <div id="legend"></div>
+  <div class="net-hint">Scroll to zoom &nbsp;·&nbsp; Drag background to pan &nbsp;·&nbsp; Click a node for details</div>
 </div>
 
-<div id="tooltip"></div>
+<div id="details-panel">
+  <button id="details-close" aria-label="Close panel">&#x2715;</button>
+  <div id="details-content"></div>
+</div>
 
 <script>
 // ─── Config ───────────────────────────────────────────────────────────────────
@@ -330,13 +483,77 @@ const CATEGORIES = [
 const COLOR_MAP = Object.fromEntries(CATEGORIES.map(c => [c.name, c.color]));
 
 function hexToRgba(hex, alpha) {
-  const r = parseInt(hex.slice(1,3), 16);
-  const g = parseInt(hex.slice(3,5), 16);
-  const b = parseInt(hex.slice(5,7), 16);
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
   return `rgba(${r},${g},${b},${alpha})`;
 }
 
-// ─── Zone View ────────────────────────────────────────────────────────────────
+// ─── Filter state ─────────────────────────────────────────────────────────────
+
+let currentView = 'zone';
+let loadedAssets = [];
+let activeCategories = new Set(CATEGORIES.map(c => c.name));
+let searchText = '';
+
+// D3 network selections, updated by renderNetworkView
+let netNodeSel = null;
+let netLinkSel = null;
+
+function assetMatchesFilters(asset) {
+  if (!activeCategories.has(asset.category)) return false;
+  if (searchText) {
+    const q = searchText.toLowerCase();
+    const haystack = [
+      asset.name        || '',
+      asset.description || '',
+      (asset.gifts || []).join(' '),
+    ].join(' ').toLowerCase();
+    if (!haystack.includes(q)) return false;
+  }
+  return true;
+}
+
+function applyFilters() {
+  if (currentView === 'zone') applyZoneFilters();
+  else applyNetworkFilters();
+}
+
+// ─── Controls ─────────────────────────────────────────────────────────────────
+
+function setupControls() {
+  document.getElementById('search-input').addEventListener('input', e => {
+    searchText = e.target.value.trim();
+    applyFilters();
+  });
+
+  const filtersEl = document.getElementById('category-filters');
+  CATEGORIES.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'cat-btn active';
+    btn.dataset.category = cat.name;
+    btn.textContent = cat.name;
+    btn.style.background = cat.color;
+    btn.style.borderColor = cat.color;
+
+    btn.addEventListener('click', () => {
+      if (activeCategories.has(cat.name)) {
+        activeCategories.delete(cat.name);
+        btn.classList.replace('active', 'inactive');
+      } else {
+        activeCategories.add(cat.name);
+        btn.classList.replace('inactive', 'active');
+        btn.style.background = cat.color;
+        btn.style.borderColor = cat.color;
+      }
+      applyFilters();
+    });
+
+    filtersEl.appendChild(btn);
+  });
+}
+
+// ─── Zone view ────────────────────────────────────────────────────────────────
 
 function renderZoneView(assets) {
   const container = document.getElementById('zone-view');
@@ -348,43 +565,60 @@ function renderZoneView(assets) {
 
     const zone = document.createElement('div');
     zone.className = 'zone';
+    zone.dataset.category = cat.name;
     zone.style.borderColor = hexToRgba(color, 0.3);
 
-    const header = document.createElement('div');
-    header.className = 'zone-header';
-    header.style.background = color;
-    header.textContent = cat.name;
-    zone.appendChild(header);
+    const zoneHeader = document.createElement('div');
+    zoneHeader.className = 'zone-header';
+    zoneHeader.style.background = color;
+    zoneHeader.textContent = cat.name;
+    zone.appendChild(zoneHeader);
 
     const cardsEl = document.createElement('div');
     cardsEl.className = 'zone-cards';
     cardsEl.style.background = hexToRgba(color, 0.05);
 
-    if (catAssets.length === 0) {
-      const empty = document.createElement('div');
-      empty.className = 'empty-zone';
-      empty.textContent = 'No assets found';
-      cardsEl.appendChild(empty);
-    } else {
-      catAssets.forEach(asset => cardsEl.appendChild(buildCard(asset, color)));
-    }
+    // Placeholder shown when all cards are filtered out
+    const emptyEl = document.createElement('div');
+    emptyEl.className = 'empty-zone';
+    emptyEl.textContent = catAssets.length === 0 ? 'No assets found' : 'No assets match';
+    cardsEl.appendChild(emptyEl);
+
+    catAssets.forEach(asset => {
+      cardsEl.appendChild(buildCard(asset, color, assets.indexOf(asset)));
+    });
 
     zone.appendChild(cardsEl);
     container.appendChild(zone);
   });
+
+  applyZoneFilters();
 }
 
-function buildCard(asset, color) {
+function applyZoneFilters() {
+  document.querySelectorAll('.card').forEach(card => {
+    const idx = parseInt(card.dataset.index, 10);
+    card.style.display = assetMatchesFilters(loadedAssets[idx]) ? '' : 'none';
+  });
+
+  document.querySelectorAll('.zone').forEach(zone => {
+    const visibleCards = [...zone.querySelectorAll('.card')]
+      .filter(c => c.style.display !== 'none');
+    const emptyEl = zone.querySelector('.empty-zone');
+    if (emptyEl) emptyEl.style.display = visibleCards.length === 0 ? '' : 'none';
+  });
+}
+
+function buildCard(asset, color, globalIdx) {
   const card = document.createElement('div');
   card.className = 'card';
+  card.dataset.index = globalIdx;
 
-  // Name
   const name = document.createElement('div');
   name.className = 'card-name';
   name.textContent = asset.name || '(unnamed)';
   card.appendChild(name);
 
-  // Gift tags
   const giftsEl = document.createElement('div');
   giftsEl.className = 'card-gifts';
   const gifts = Array.isArray(asset.gifts) ? asset.gifts : [];
@@ -397,14 +631,12 @@ function buildCard(asset, color) {
   });
   card.appendChild(giftsEl);
 
-  // Description preview
   const preview = document.createElement('div');
   preview.className = 'card-preview';
   const desc = asset.description || '';
   preview.textContent = desc.length > 95 ? desc.slice(0, 95) + '\u2026' : desc;
   card.appendChild(preview);
 
-  // Expanded content
   const expanded = document.createElement('div');
   expanded.className = 'card-expanded-content';
 
@@ -441,180 +673,136 @@ function buildCard(asset, color) {
   return card;
 }
 
-// ─── Network View ─────────────────────────────────────────────────────────────
-
-let animationId = null;  // kept for toggle handler compatibility; unused by static layout
+// ─── Network view (D3 force simulation) ──────────────────────────────────────
 
 function renderNetworkView(assets) {
-  if (animationId) { cancelAnimationFrame(animationId); animationId = null; }
+  const container = document.getElementById('network-view');
+  const headerH = document.querySelector('header').offsetHeight;
+  const H = window.innerHeight - headerH;
+  const W = container.clientWidth || window.innerWidth;
+  const NODE_R = 18;
 
-  const svg = document.getElementById('network-svg');
-  svg.innerHTML = '';
+  container.style.height = H + 'px';
 
-  const W = svg.clientWidth  || window.innerWidth;
-  const H = svg.clientHeight || window.innerHeight - 62;
-  const cx = W / 2, cy = H / 2;
-  const NODE_R = 22;
+  const svg = d3.select('#network-svg');
+  svg.selectAll('*').remove();
+  svg.attr('width', W).attr('height', H);
 
-  // ── Static layout: categories on a ring, nodes in a sub-circle per category ──
+  // Layer that zoom/pan transforms are applied to
+  const zoomLayer = svg.append('g').attr('class', 'zoom-layer');
 
-  // Cluster centres are placed on a circle sized to use ~70% of the shorter dimension
-  const clusterRingR = Math.min(W, H) * 0.33;
+  // ── Nodes ──────────────────────────────────────────────────────────────────
 
-  // Build a node record for every asset, positioned by category cluster
-  const nodes = new Array(assets.length);
+  const nodes = assets.map((asset, i) => ({
+    id:    i,
+    asset,
+    color: COLOR_MAP[asset.category] || '#aaa',
+  }));
 
-  // Group asset indices by category in CATEGORIES order
-  const byCategory = {};
-  CATEGORIES.forEach(c => { byCategory[c.name] = []; });
-  assets.forEach((a, i) => {
-    if (byCategory[a.category]) byCategory[a.category].push(i);
-  });
+  // ── Edges: shared name, location, or contact across categories ─────────────
 
-  CATEGORIES.forEach((cat, ci) => {
-    const members = byCategory[cat.name];
-    if (members.length === 0) return;
-
-    // Cluster centre angle: spread 6 categories evenly, starting from top
-    const clusterAngle = (ci / CATEGORIES.length) * 2 * Math.PI - Math.PI / 2;
-    const clusterCx = cx + clusterRingR * Math.cos(clusterAngle);
-    const clusterCy = cy + clusterRingR * Math.sin(clusterAngle);
-
-    // Inner ring radius scales with member count so nodes don't overlap
-    // circumference = count × node diameter + padding  →  r = circumference / 2π
-    const innerR = members.length === 1
-      ? 0
-      : Math.max(42, members.length * (NODE_R * 2 + 6) / (2 * Math.PI));
-
-    members.forEach((assetIdx, ni) => {
-      const nodeAngle = members.length === 1
-        ? 0
-        : (ni / members.length) * 2 * Math.PI - Math.PI / 2;
-      nodes[assetIdx] = {
-        id:    assetIdx,
-        asset: assets[assetIdx],
-        color: COLOR_MAP[assets[assetIdx].category] || '#aaa',
-        x:     clusterCx + innerR * Math.cos(nodeAngle),
-        y:     clusterCy + innerR * Math.sin(nodeAngle),
-      };
-    });
-  });
-
-  // ── Edges — shared name (multi-category), shared location, shared contact ────
-
+  const norm = s => (s || '').trim().toLowerCase();
   const edgeSet = new Set();
   const links = [];
-
-  function tryEdge(i, j) {
-    const key = i < j ? `${i}-${j}` : `${j}-${i}`;
-    if (!edgeSet.has(key)) { edgeSet.add(key); links.push({ s: i, t: j }); }
-  }
 
   for (let i = 0; i < assets.length; i++) {
     for (let j = i + 1; j < assets.length; j++) {
       const a = assets[i], b = assets[j];
-      const norm = s => (s || '').trim().toLowerCase();
       if (
         (a.name     && b.name     && norm(a.name)     === norm(b.name))     ||
         (a.location && b.location && norm(a.location) === norm(b.location)) ||
         (a.contact  && b.contact  && norm(a.contact)  === norm(b.contact))
-      ) tryEdge(i, j);
+      ) {
+        const key = `${i}-${j}`;
+        if (!edgeSet.has(key)) {
+          edgeSet.add(key);
+          links.push({ source: i, target: j });
+        }
+      }
     }
   }
 
-  // ── SVG helpers ──────────────────────────────────────────────────────────────
+  // ── D3 force simulation ────────────────────────────────────────────────────
 
-  const NS = 'http://www.w3.org/2000/svg';
-  const mk = tag => document.createElementNS(NS, tag);
+  const simulation = d3.forceSimulation(nodes)
+    .force('link',    d3.forceLink(links).id(d => d.id).distance(85).strength(0.35))
+    .force('charge',  d3.forceManyBody().strength(-240))
+    .force('center',  d3.forceCenter(W / 2, H / 2))
+    .force('collide', d3.forceCollide(NODE_R + 7));
 
-  // Draw edges first (behind nodes)
-  const linkEls = links.map(l => {
-    const line = mk('line');
-    line.classList.add('net-link');
-    const s = nodes[l.s], t = nodes[l.t];
-    line.setAttribute('x1', s.x); line.setAttribute('y1', s.y);
-    line.setAttribute('x2', t.x); line.setAttribute('y2', t.y);
-    svg.appendChild(line);
-    return line;
-  });
+  // ── Draw links (behind nodes) ──────────────────────────────────────────────
 
-  // ── Draw nodes ───────────────────────────────────────────────────────────────
+  const linkSel = zoomLayer.append('g')
+    .selectAll('line')
+    .data(links)
+    .join('line')
+    .attr('class', 'net-link');
 
-  const tooltip = document.getElementById('tooltip');
-  let dragging = null;  // { node, el }
+  // ── Draw nodes ─────────────────────────────────────────────────────────────
 
-  nodes.forEach(n => {
-    const g = mk('g');
-    g.classList.add('net-node');
-    g.setAttribute('transform', `translate(${n.x},${n.y})`);
+  const nodeSel = zoomLayer.append('g')
+    .selectAll('g')
+    .data(nodes)
+    .join('g')
+    .attr('class', 'net-node')
+    .call(
+      d3.drag()
+        .on('start', (event, d) => {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x; d.fy = d.y;
+        })
+        .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
+        .on('end',  (event, d) => {
+          if (!event.active) simulation.alphaTarget(0);
+          d.fx = null; d.fy = null;
+        })
+    );
 
-    const circle = mk('circle');
-    circle.setAttribute('r', String(NODE_R));
-    circle.setAttribute('fill', n.color);
-    g.appendChild(circle);
+  nodeSel.append('circle')
+    .attr('r', NODE_R)
+    .attr('fill', d => d.color);
 
-    // Label: up to 2 lines, max 13 chars per line
-    const words = (n.asset.name || '?').split(' ');
-    const mid   = Math.ceil(words.length / 2);
-    const line1 = words.slice(0, mid).join(' ').slice(0, 13);
-    const line2 = words.length > 1 ? words.slice(mid).join(' ').slice(0, 13) : null;
-
-    const text = mk('text');
-    if (line2) {
-      const t1 = mk('tspan'); t1.setAttribute('x', '0'); t1.setAttribute('dy', '-0.35em'); t1.textContent = line1;
-      const t2 = mk('tspan'); t2.setAttribute('x', '0'); t2.setAttribute('dy', '1.2em');  t2.textContent = line2;
-      text.appendChild(t1); text.appendChild(t2);
-    } else {
-      text.setAttribute('dy', '0.35em');
-      text.textContent = line1;
-    }
-    g.appendChild(text);
-
-    // Drag — move node and update its connected edges; no simulation
-    g.addEventListener('mousedown', e => {
-      dragging = { node: n, el: g };
-      e.preventDefault();
+  // Label sits below the circle
+  nodeSel.append('text')
+    .attr('dy', NODE_R + 11)
+    .text(d => {
+      const n = d.asset.name || '';
+      return n.length > 15 ? n.slice(0, 14) + '\u2026' : n;
     });
 
-    // Tooltip
-    g.addEventListener('mouseenter', () => {
-      const a = n.asset;
-      tooltip.innerHTML =
-        `<div class="tt-name">${a.name || ''}</div>` +
-        `<div class="tt-cat" style="color:${n.color}">${a.category}</div>` +
-        (a.description ? `<div class="tt-desc">${a.description.slice(0, 110)}${a.description.length > 110 ? '\u2026' : ''}</div>` : '');
-      tooltip.style.display = 'block';
+  // Click → details panel; stopPropagation keeps svg background click separate
+  nodeSel.on('click', (event, d) => {
+    event.stopPropagation();
+    showDetailsPanel(d.asset);
+  });
+
+  // ── Simulation tick ────────────────────────────────────────────────────────
+
+  simulation.on('tick', () => {
+    linkSel
+      .attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
+
+    nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+  });
+
+  // ── Zoom and pan ───────────────────────────────────────────────────────────
+
+  const zoom = d3.zoom()
+    .scaleExtent([0.1, 6])
+    .on('zoom', event => {
+      zoomLayer.attr('transform', event.transform);
     });
-    g.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
 
-    svg.appendChild(g);
-  });
+  svg.call(zoom);
 
-  svg.addEventListener('mousemove', e => {
-    if (dragging) {
-      const rect = svg.getBoundingClientRect();
-      dragging.node.x = e.clientX - rect.left;
-      dragging.node.y = e.clientY - rect.top;
-      dragging.el.setAttribute('transform', `translate(${dragging.node.x},${dragging.node.y})`);
-      // Redraw only edges touching this node
-      links.forEach((l, i) => {
-        if (l.s === dragging.node.id || l.t === dragging.node.id) {
-          const s = nodes[l.s], t = nodes[l.t];
-          linkEls[i].setAttribute('x1', s.x); linkEls[i].setAttribute('y1', s.y);
-          linkEls[i].setAttribute('x2', t.x); linkEls[i].setAttribute('y2', t.y);
-        }
-      });
-    }
-    if (tooltip.style.display === 'block') {
-      tooltip.style.left = (e.clientX + 16) + 'px';
-      tooltip.style.top  = (e.clientY - 12) + 'px';
-    }
-  });
+  // Background click closes details panel (node clicks stop propagation)
+  svg.on('click', () => closeDetailsPanel());
 
-  svg.addEventListener('mouseup',    () => { dragging = null; });
-  svg.addEventListener('mouseleave', () => { dragging = null; });
+  // ── Legend ────────────────────────────────────────────────────────────────
 
-  // Legend
   const legend = document.getElementById('legend');
   legend.innerHTML = CATEGORIES.map(c =>
     `<div class="legend-item">
@@ -623,36 +811,90 @@ function renderNetworkView(assets) {
     </div>`
   ).join('');
   legend.classList.add('visible');
+
+  // Store selections so applyNetworkFilters can update them live
+  netNodeSel = nodeSel;
+  netLinkSel = linkSel;
+
+  // Apply any active filters immediately after render
+  applyNetworkFilters();
 }
 
-// ─── Toggle ───────────────────────────────────────────────────────────────────
+function applyNetworkFilters() {
+  if (!netNodeSel) return;
 
-let currentView = 'zone';
-let loadedAssets = [];
+  netNodeSel.style('opacity', d => assetMatchesFilters(d.asset) ? 1 : 0.1);
+
+  netLinkSel.style('opacity', d => {
+    // After simulation initialisation, source/target are node objects
+    const src = typeof d.source === 'object' ? d.source : null;
+    const tgt = typeof d.target === 'object' ? d.target : null;
+    if (!src || !tgt) return 0.5;
+    return (assetMatchesFilters(src.asset) && assetMatchesFilters(tgt.asset)) ? 0.65 : 0.04;
+  });
+}
+
+// ─── Details panel ────────────────────────────────────────────────────────────
+
+function showDetailsPanel(asset) {
+  const color = COLOR_MAP[asset.category] || '#aaa';
+  const gifts = Array.isArray(asset.gifts) ? asset.gifts : [];
+
+  const giftTagsHTML = gifts
+    .map(g => `<span class="gift-tag" style="background:${hexToRgba(color, 0.8)}">${g}</span>`)
+    .join('');
+
+  const esc = s => (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+  document.getElementById('details-content').innerHTML = `
+    <div class="det-name">${esc(asset.name) || '(unnamed)'}</div>
+    <span class="det-category" style="background:${color}">${esc(asset.category)}</span>
+    ${gifts.length ? `<div class="det-gifts">${giftTagsHTML}</div>` : ''}
+    ${asset.description ? `<div class="det-desc">${esc(asset.description)}</div>` : ''}
+    ${asset.contact  ? `<div class="det-field"><strong>Contact:</strong> ${esc(asset.contact)}</div>`  : ''}
+    ${asset.location ? `<div class="det-field"><strong>Location:</strong> ${esc(asset.location)}</div>` : ''}
+    ${asset.source_text ? `<div class="det-source">${esc(asset.source_text)}</div>` : ''}
+  `;
+
+  document.getElementById('details-panel').classList.add('open');
+}
+
+function closeDetailsPanel() {
+  document.getElementById('details-panel').classList.remove('open');
+}
+
+document.getElementById('details-close').addEventListener('click', closeDetailsPanel);
+
+// ─── Toggle view ──────────────────────────────────────────────────────────────
 
 document.getElementById('toggle-btn').addEventListener('click', () => {
   if (currentView === 'zone') {
     document.getElementById('zone-view').style.display = 'none';
     document.getElementById('network-view').style.display = 'block';
-    document.getElementById('toggle-btn').textContent = 'Switch to Asset View';
+    document.getElementById('toggle-btn').textContent = 'Asset View';
+    closeDetailsPanel();
     renderNetworkView(loadedAssets);
     currentView = 'network';
   } else {
-    if (animationId) { cancelAnimationFrame(animationId); animationId = null; }
     document.getElementById('network-view').style.display = 'none';
     document.getElementById('legend').classList.remove('visible');
     document.getElementById('zone-view').style.display = 'grid';
-    document.getElementById('toggle-btn').textContent = 'Switch to Network View';
+    document.getElementById('toggle-btn').textContent = 'Network View';
+    closeDetailsPanel();
+    netNodeSel = null;
+    netLinkSel = null;
     currentView = 'zone';
+    applyZoneFilters();
   }
 });
 
-// ─── Load Data ────────────────────────────────────────────────────────────────
+// ─── Load data ────────────────────────────────────────────────────────────────
 
 (function () {
   var assets = __ASSETS_DATA__;
   loadedAssets = assets;
   document.getElementById('asset-count').textContent = '\u2014 ' + assets.length + ' assets';
+  setupControls();
   renderZoneView(assets);
 })();
 </script>
